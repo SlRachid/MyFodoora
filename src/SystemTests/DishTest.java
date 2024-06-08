@@ -14,7 +14,7 @@ public class DishTest {
 	@Test
 	public void testGetDishType() {
 		MainDish mainDish = new MainDish("quiche aux legumes", 18, DietType.vegetarian);
-		assertEquals("The dish type must be compute automatically", "mainDish", mainDish.getDishType());
+		assertEquals("The dish type must be compute automatically", DishType.main, mainDish.getDishType());
 	}
 
 	@Test

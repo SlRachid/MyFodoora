@@ -1,8 +1,10 @@
-package System;
+package CLUI;
 import Food.*;
 import User.*;
 import OrderAndDelivery.*;
-
+import System.AccountDeactivatedException;
+import System.IdentificationIncorrectException;
+import System.MyFoodora;
 
 import java.io.*;
 import java.util.Scanner;
@@ -27,13 +29,13 @@ public class MyFoodoraClient {
 
 		sc = new Scanner(System.in);
 
-		System.out.println("Welcome on the MyFoodora application \n");
+		System.out.println("Welcome to our first java application \n");
 
 		String commande = "" ;
 		closeLoop :
 			while (!commande.equals("close")){	
 				System.out.println("Please use \"login <username> <password>\"\n"
-						+ "Type \"help <>\" to have a list of all available commands");
+						+ "Or type \"help <>\" to obtain the list of the available commands");
 				input = sc.nextLine();
 				st = new StringTokenizer(input) ;
 				try{
@@ -42,7 +44,7 @@ public class MyFoodoraClient {
 					commande = "";
 				}
 				switch (commande){
-				case("register"):
+				case("registerCustomer"):
 					boolean error = false ;
 					st.nextToken("\"");
 					String customerName = st.nextToken("\"");
@@ -61,19 +63,18 @@ public class MyFoodoraClient {
 						customerX = Double.parseDouble(customerXString) ;
 						customerY = Double.parseDouble(customerYString) ;
 					}catch(NumberFormatException e){
-						System.err.println("The address parameter is invalid you must enter two coordinates (ex : \"1.25,1.45\").");
+						System.err.println("The address is invalid you must enter two coordinates  \"X,Y\"");
 						error = true ;
 					}
 					if(st.hasMoreTokens()){	
-						System.err.println("The command \"register <firstName> <lastName> <username> <password> <address>\" has only 5 parameters.");
+						System.err.println("The command \"registerCustomer <firstName> <lastName> <username> <password> <address>\" has only 5 parameters.");
 						error = true ;
 					}
 					if(!error){
 						myFoodora.getUserFactory().registerUser(UserType.customer, customerName, customerSurname, customerUserName, customerPassword,myFoodora);
 						try{
 							((Customer)myFoodora.findUserByName(customerName)).setAddress(new Location(customerX,customerY));
-							System.out.println("You have been registered. Here is your accounts informations : ") ;
-							System.out.println(myFoodora.findUserByName(customerName));
+							System.out.println("Your account is now created. You may login ") ;
 						}catch(UserNotFoundException e){
 							System.out.println("Error while creating the user.");
 						}
@@ -111,7 +112,7 @@ public class MyFoodoraClient {
 					}
 					break;					
 				case("help"):
-					System.out.println("\"register <firstName> <lastName> <username> <password> <address>\" : register as customer into the system\n"
+					System.out.println("\"registerCustomer <firstName> <lastName> <username> <password> <address>\" : register as customer into the system\n"
 							+ "\"login <username> <password>\" : log into the system\n"
 							+ "\"runTest <testScenarioFile>\" : execute the list of CLUI commands contained in the testScenario file passed as argument\n"
 							+ "\"close<>\" : close MyFoodora");

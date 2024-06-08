@@ -22,7 +22,7 @@ public class ManagerTest {
 	public static void importMyFoodora(){
 		try{
 			myFoodora = MyFoodora.loadMyFoodora();
-			manager = (Manager)myFoodora.findUserByUniqueID(0);
+			manager = (Manager)myFoodora.findUserByUniqueID(1);
 		}catch(Exception e){
 		}
 	}
@@ -97,6 +97,7 @@ public class ManagerTest {
 
 	@Test
 	public void testMostSellingRestaurant() {
+		System.out.println(manager);
 		Restaurant mostSellingRestaurant = manager.mostSellingRestaurant();
 		System.out.println(mostSellingRestaurant);
 		

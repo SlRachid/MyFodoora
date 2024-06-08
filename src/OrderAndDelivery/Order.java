@@ -12,7 +12,7 @@ public class Order implements java.io.Serializable {
 	private static final long serialVersionUID = -372769376339718757L;
 	
 	/**
-	 * the static lastID ensure that the IDs of all orders are different
+	 * the static nextID to ensure the uniqueness of the IDs
 	 */
 	protected static int nextID = 1 ;
 	private int uniqueID;
@@ -20,20 +20,15 @@ public class Order implements java.io.Serializable {
 	 * the date of the order
 	 */
 	private Calendar dateOfOrder ;
-	/**
-	 * the customer who makes the order
-	 */
+	
 	private Customer customer;
-	/**
-	 * the restaurant chosen by the customer
-	 */
 	private Restaurant restaurant;
 	/**
-	 * the list of dishes picked by the customer
+	 * the list of the chosen dishes
 	 */
 	private ArrayList<Dish> dishes;
 	/**
-	 * the list of meals picked by the customer
+	 * the list of the chosen meals
 	 */
 	private ArrayList<Meal> meals;
 	/**
@@ -41,7 +36,7 @@ public class Order implements java.io.Serializable {
 	 */
 	private double price;
 	/**
-	 * the courier who will delivery the order
+	 * the courier who will deliver the order
 	 */
 	private Courier courier ;
 	/**
@@ -89,16 +84,16 @@ public class Order implements java.io.Serializable {
 	}
 	
 	/**
-	 * add a dish to the list of dishes proposed on the menu
-	 * @param dish : the dish to add to the menu
+	 * add a dish to the order
+	 * @param dish : the dish to add
 	 */
 	public void addDish(Dish dish){
 		this.dishes.add(dish);
 	}
 	
 	/**
-	 * remove a dish to the list of dishes proposed on the menu
-	 * @param dish : the dish to remove from the menu
+	 * remove a dish from the order
+	 * @param dish : the dish to remove
 	 */
 	public void removeDish(Dish dish){
 		this.dishes.remove(dish);
@@ -109,7 +104,7 @@ public class Order implements java.io.Serializable {
 	}
 	
 	/**
-	 * add a meal to the list of meals proposed on the menu
+	 * add a meal to the order
 	 * @param meal : the meal to add to the menu
 	 */
 	public void addMeal(Meal meal){

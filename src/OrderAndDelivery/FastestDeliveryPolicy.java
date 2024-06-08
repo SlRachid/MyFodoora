@@ -26,7 +26,7 @@ public class FastestDeliveryPolicy implements DeliveryPolicy,Serializable {
 		double yOrder = order.getAddressOfDelivery().getY();
 		
 		Courier chosenCourier = null;
-		//distanceMin is initiated to infinite
+		//distanceMin is initiated to plus infinity
 		double distanceMin = Double.POSITIVE_INFINITY;
 		
 		for (User user: myFoodora.getUsers()){
@@ -34,7 +34,7 @@ public class FastestDeliveryPolicy implements DeliveryPolicy,Serializable {
 				Courier courier = (Courier)user;
 				double x = courier.getPosition().getX();
 				double y = courier.getPosition().getY();
-				//compute the distance between the address of delivery and the position of the courier 
+				//the distance between the address of delivery and the position of the courier 
 				double distance = Math.pow(Math.pow(x-xOrder, 2)+Math.pow(y-yOrder, 2), 0.5);
 				
 				if (courier.isOnDuty()&& (distance < distanceMin)){

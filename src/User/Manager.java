@@ -170,7 +170,7 @@ public class Manager extends User {
 		int mostSells = 0;
 		
 		for (User user : myFoodora.getUsers()){
-			if ((user.getUserType().equals("restaurant"))&&user.isActivated()){
+			if ((user.getUserType().equals(UserType.restaurant))&&user.isActivated()){
 				Restaurant restaurant = (Restaurant)user;
 				if(restaurant.getCounter() > mostSells){
 					mostSellingRestaurant = restaurant;
@@ -190,7 +190,7 @@ public class Manager extends User {
 		int leastSells = 999999999;
 		
 		for (User user : myFoodora.getUsers()){
-			if (user.getUserType().equals("restaurant")){
+			if (user.getUserType().equals(UserType.restaurant)){
 				Restaurant restaurant = (Restaurant)user;
 				if(restaurant.getCounter() < leastSells){
 					leastSellingRestaurant = restaurant;
@@ -210,7 +210,7 @@ public class Manager extends User {
 		int mostDeliveries = 0;
 		
 		for (User user : myFoodora.getUsers()){
-			if (user.getUserType().equals("courier")){
+			if (user.getUserType().equals(UserType.courier)){
 				Courier courier = (Courier)user;
 				if((courier.getCounter() > mostDeliveries)&&(courier.isActivated())){
 					mostActiveCourier = courier;
@@ -230,7 +230,7 @@ public class Manager extends User {
 		int leastDeliveries = 999999999;
 		
 		for (User user : myFoodora.getUsers()){
-			if (user.getUserType().equals("courier")){
+			if (user.getUserType().equals(UserType.courier)){
 				Courier courier = (Courier)user;
 				if(courier.getCounter() < leastDeliveries){
 					leastActiveCourier = courier;
