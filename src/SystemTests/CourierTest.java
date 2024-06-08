@@ -53,6 +53,7 @@ public class CourierTest {
 		
 		//we check that the order is on the board
 		System.out.println(board);
+		System.out.println(courier);
 	}
 	
 	@Test
@@ -63,14 +64,14 @@ public class CourierTest {
 				
 		//the courier gets the call on his board : order of uniqueID 0
 		Board<Order> board = courier.getBoard();
-		Order order = board.findObsById(0);
+		Order order = board.findObsById(1);
 		
 		//the courier accept the delivery call
 		courier.acceptDeliveryCall(true, order, myFoodora);
 		
 		//we check that the counter of the courier has increased
 		int currentCounter = courier.getCounter();
-		assertEquals (previousCounter+1, currentCounter, 0);
+		assertEquals(previousCounter+1, currentCounter, 0);
 		
 		//we check that the board is now cleared
 		System.out.println(board);
@@ -83,7 +84,7 @@ public class CourierTest {
 				
 		//the courier gets the call on his board : order of uniqueID 0
 		Board<Order> board = courier.getBoard();
-		Order order = board.findObsById(0);
+		Order order = board.findObsById(1);
 		
 		//the courier refuse the delivery call
 		courier.acceptDeliveryCall(false, order, myFoodora);

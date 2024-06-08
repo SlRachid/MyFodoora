@@ -1,6 +1,6 @@
-package System;
+package OrderAndDelivery;
 import Food.*;
-import OrderAndDelivery.*;
+import System.MyFoodora;
 import User.*;
 
 public interface TargetProfitPolicy {
