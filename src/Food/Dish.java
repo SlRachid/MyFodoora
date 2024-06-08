@@ -11,21 +11,13 @@ public abstract class Dish extends MenuItem {
 	 * W.r.t the meal : "starter", "mainDish" or "dessert"
 	 */
 	private DishType dishType;
-	/**
-	 * the name of the dish
-	 */
 	private String name;
 	/**
 	 * W.r.t the customer's diet : "standard", "vegetarian" or "glutenFree"
 	 */
 	private DietType type; 
 	
-	/**
-	 * creates a dish object of a given price and type
-	 * @param name : the name of the dish
-	 * @param price : the price of the dish
-	 * @param type : the type of the dish : "standard", "vegetarian" or "glutenFree"
-	 */
+
 	public Dish(String name, double price, DietType type) {
 		this.name = name;
 		this.price = price;
@@ -59,11 +51,7 @@ public abstract class Dish extends MenuItem {
 
 	@Override
 	public String toString() {
-		String result = "none";
-		if (this != null){
-			result = "[name=" + name + ", price=" + price + ", type=" + type + ", counter=" + counter + "]\n";
-		}
-		return result;
+		return "[" + name + ", price=" + price + ", type=" + type + ", counter=" + counter + "]\n";
 	}
 	
 	@Override

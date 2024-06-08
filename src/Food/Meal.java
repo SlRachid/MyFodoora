@@ -49,7 +49,7 @@ public abstract class Meal extends MenuItem {
 	
 	public abstract void update (Menu menu);
 	
-	public abstract void addDish (Dish dish) throws NoPlaceInMealException;
+	public abstract void addDish (Dish dish) throws MeallsCompleteException;
 
 	public String getName() {
 		return name;

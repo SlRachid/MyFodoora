@@ -10,11 +10,7 @@ public class SorterCounter implements SorterFoodItem,Serializable {
 
 	private static final long serialVersionUID = -2130889579431738571L;
 
-	/**
-	 * looks over the list of foodItems looking for the biggest counter
-	 * @param foodItems - list of food items
-	 * @return the foodItem with the biggest counter
-	 */
+	@Override
 	public MenuItem maxFoodItem(ArrayList<MenuItem> foodItems){
 		MenuItem maxFoodItem = null; 
 		int maxCounter = 0 ;
@@ -31,10 +27,7 @@ public class SorterCounter implements SorterFoodItem,Serializable {
 		}
 		return maxFoodItem; 
 	}
-	
-	/**
-	 * sorts the list according to the counter of food items (in descending order)
-	 */
+
 	@Override
 	public ArrayList<MenuItem> sort(ArrayList<MenuItem> foodItems){
 		ArrayList<MenuItem> FoodItemsCopy = (ArrayList<MenuItem>) foodItems.clone(); 

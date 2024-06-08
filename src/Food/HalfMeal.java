@@ -69,10 +69,10 @@ public class HalfMeal extends Meal {
 	/**
 	 * adds a dish to the meal if possible
 	 * @param dish : the dish we want to add to the meal
-	 * @throws NoPlaceInMealException : if the meal is complete
+	 * @throws MeallsCompleteException : if the meal is complete
 	 */
 	@Override
-	public void addDish(Dish dish) throws NoPlaceInMealException {
+	public void addDish(Dish dish) throws MeallsCompleteException {
 		this.mealVisitor.addDish2Meal(dish, this);
 	}
 	

@@ -48,7 +48,7 @@ public class OrderTest {
 	}
 	
 	@Test
-	public void testSubmit() throws FoodItemNotFoundException{
+	public void testSubmit() throws ItemNotFoundException{
 		//the customer submit the order
 		order.submit(true, myFoodora);
 		

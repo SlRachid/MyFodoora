@@ -27,7 +27,7 @@ public class FastestDeliveryPolicy implements DeliveryPolicy,Serializable {
 		
 		Courier chosenCourier = null;
 		//distanceMin is initiated to infinite
-		double distanceMin = 999999999;
+		double distanceMin = Double.POSITIVE_INFINITY;
 		
 		for (User user: myFoodora.getUsers()){
 			if (user instanceof Courier){

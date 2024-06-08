@@ -38,22 +38,22 @@ public class MealTest {
 	}
 
 	@Test
-	public void testUpdate() throws FoodItemNotFoundException {
+	public void testUpdate() throws ItemNotFoundException {
 		restaurant.setMealOfTheWeek("M3", myFoodora);
 		double price = fullMeal.getPrice();
 		assertEquals("the price of meal M3 is 9� when meal of the week",price, 9., 0);
 	}
 	
 	@Test
-	public void testAddDish() throws NoPlaceInMealException, FoodItemNotFoundException{
+	public void testAddDish() throws MeallsCompleteException, ItemNotFoundException{
 		Dish dish = restaurant.findDishByName("maki thon");
 		FullMeal fullMeal = new FullMeal("S3");
 		fullMeal.addDish(dish);
 		assertEquals("the dish has been added to the meal", fullMeal.getMainDish(), dish);
 	}
 
-	@Test(expected = NoPlaceInMealException.class)
-	public void testAddDishWhenMealFull() throws NoPlaceInMealException, FoodItemNotFoundException{
+	@Test(expected = MeallsCompleteException.class)
+	public void testAddDishWhenMealFull() throws MeallsCompleteException, ItemNotFoundException{
 		Dish dish = restaurant.findDishByName("maki thon");
 		halfMeal.addDish(dish);
 	}

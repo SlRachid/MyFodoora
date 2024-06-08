@@ -8,8 +8,8 @@ import System.*;
 
 
 public class Courier extends User {
-	
-	private static final long serialVersionUID = 5347546696284207206L;
+
+	private static final long serialVersionUID = 7761609339188995456L;
 	private Location position ;
 	private String phoneNumber ;
 	/**

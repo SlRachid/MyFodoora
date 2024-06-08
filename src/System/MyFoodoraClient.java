@@ -243,14 +243,14 @@ public class MyFoodoraClient {
 					orderedDish = currentOrder.getRestaurant().findDishByName(itemName) ;
 					itemType = "dish" ;
 					itemNotExisting = false ;
-				}catch(FoodItemNotFoundException e){
+				}catch(ItemNotFoundException e){
 					
 				}
 				try{
 					orderedMeal = currentOrder.getRestaurant().findMealByName(itemName) ;
 					itemType = "meal" ;
 					itemNotExisting = false ;
-				}catch(FoodItemNotFoundException e){
+				}catch(ItemNotFoundException e){
 					
 				}
 				if(itemNotExisting){
@@ -1056,10 +1056,10 @@ public class MyFoodoraClient {
 						System.out.println("Here is the updated meal");
 						System.out.println(currentRestaurant.findMealByName(mName));
 					}
-					catch(NoPlaceInMealException e){
+					catch(MeallsCompleteException e){
 						System.err.println("You cannot add the dish "+dName+ " in the meal "+mName+".");
 					}
-					catch(FoodItemNotFoundException e){
+					catch(ItemNotFoundException e){
 						System.err.println("The dish "+dName+" or the meal"+mName+" do not exist.");
 					}
 				}
@@ -1076,7 +1076,7 @@ public class MyFoodoraClient {
 						System.out.println("Here is the "+mealName+" :");
 						System.out.println(currentRestaurant.findMealByName(mealName));
 					}
-					catch(FoodItemNotFoundException e){
+					catch(ItemNotFoundException e){
 						System.err.println("The meal"+mealName+" does not exist.");
 					}
 				}
@@ -1134,7 +1134,7 @@ public class MyFoodoraClient {
 						System.out.println("Here is the new meal of the week :");
 						System.out.println(currentRestaurant.getMenu().getMealOfTheWeek());
 					}
-					catch(FoodItemNotFoundException e){
+					catch(ItemNotFoundException e){
 						System.err.println("The meal"+mealName+" does not exist.");
 					}
 				}

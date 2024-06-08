@@ -14,10 +14,7 @@ public class Order implements java.io.Serializable {
 	/**
 	 * the static lastID ensure that the IDs of all orders are different
 	 */
-	protected static int lastID = 1 ;
-	/**
-	 * the unique ID of the order
-	 */
+	protected static int nextID = 1 ;
 	private int uniqueID;
 	/**
 	 * the date of the order
@@ -58,8 +55,8 @@ public class Order implements java.io.Serializable {
 	 * @param restaurant : the target restaurant
 	 */
 	public Order(Customer customer, Restaurant restaurant) {
-		this.uniqueID = lastID;
-		lastID++;
+		this.uniqueID = nextID;
+		nextID++;
 		
 		this.customer = customer;
 		this.restaurant = restaurant;

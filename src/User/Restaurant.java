@@ -13,7 +13,6 @@ public class Restaurant extends User {
 	private int counter = 0 ;
 	private FoodItemFactory foodItemFactory ;
 	
-	private SorterFoodItemFactory  sorterFoodItemFactory = new SorterFoodItemFactory();
 	/**
 	 * the policy to sort food items that have been shipped in completed orders
 	 */
@@ -66,9 +65,9 @@ public class Restaurant extends User {
 	/**
 	 * remove dish of given name from the menu
 	 * @param name : the name of the dish
-	 * @throws FoodItemNotFoundException : if the dish of given name is not in the menu
+	 * @throws ItemNotFoundException : if the dish of given name is not in the menu
 	 */
-	public void removeDish(String name) throws FoodItemNotFoundException{
+	public void removeDish(String name) throws ItemNotFoundException{
 		Dish dish = this.findDishByName(name);
 		this.menu.removeDish(dish);
 	}
@@ -77,16 +76,16 @@ public class Restaurant extends User {
 	 * finds the dish of given name in the menu
 	 * @param name : the name of the dish
 	 * @return dish : the dish of given name
-	 * @throws FoodItemNotFoundException : if the dish of given name is not in the menu
+	 * @throws ItemNotFoundException : if the dish of given name is not in the menu
 	 */
-	public Dish findDishByName(String name) throws FoodItemNotFoundException {
+	public Dish findDishByName(String name) throws ItemNotFoundException {
 		ArrayList<Dish> dishes = this.menu.getDishes();
 		for (Dish dish: dishes){
 			if (dish.getName().equals(name)){
 				return dish;
 			}
 		}
-		throw (new FoodItemNotFoundException(name+" is not found")) ;
+		throw (new ItemNotFoundException(name+" is not found")) ;
 	}
 	
 	/**
@@ -102,9 +101,9 @@ public class Restaurant extends User {
 	/**
 	 * remove meal of given name from the menu
 	 * @param name : the name of the meal
-	 * @throws FoodItemNotFoundException : if the meal of given name is not in the menu
+	 * @throws ItemNotFoundException : if the meal of given name is not in the menu
 	 */
-	public void removeMeal(String name) throws FoodItemNotFoundException{
+	public void removeMeal(String name) throws ItemNotFoundException{
 		Meal meal = this.findMealByName(name);
 		this.menu.removeMeal(meal);
 	}
@@ -113,26 +112,26 @@ public class Restaurant extends User {
 	 * finds the meal of given name in the menu
 	 * @param name : the name of the meal
 	 * @return meal : the meal of given name
-	 * @throws FoodItemNotFoundException : if the meal of given name is not in the menu
+	 * @throws ItemNotFoundException : if the meal of given name is not in the menu
 	 */
-	public Meal findMealByName(String name) throws FoodItemNotFoundException {
+	public Meal findMealByName(String name) throws ItemNotFoundException {
 		ArrayList<Meal> meals = this.menu.getMeals();
 		for (Meal meal: meals){
 			if (meal.getName().equals(name)){
 				return meal;
 			}
 		}
-		throw (new FoodItemNotFoundException(name+" is not found")) ;
+		throw (new ItemNotFoundException(name+" is not found")) ;
 	}
 	
 	/**
 	 * adds a dish to a meal if possible
 	 * @param mealName : the name of the meal
 	 * @param dishName : the name of the dish
-	 * @throws NoPlaceInMealException : if the meal is already complete 
-	 * @throws FoodItemNotFoundException : if the dish or the meal of given name is not in the menu
+	 * @throws MeallsCompleteException : if the meal is already complete 
+	 * @throws ItemNotFoundException : if the dish or the meal of given name is not in the menu
 	 */
-	public void addDish2Meal(String mealName, String dishName) throws NoPlaceInMealException, FoodItemNotFoundException{
+	public void addDish2Meal(String mealName, String dishName) throws MeallsCompleteException, ItemNotFoundException{
 		Meal meal = this.findMealByName(mealName);
 		Dish dish = this.findDishByName(dishName);
 		meal.addDish(dish);
@@ -143,9 +142,9 @@ public class Restaurant extends User {
 	 * sets the new Meal of the week
 	 * @param mealName : the name of the new meal of the week
 	 * @param myFoodora : the myFoodora core
-	 * @throws FoodItemNotFoundException : if the meal of given name is not in the menu
+	 * @throws ItemNotFoundException : if the meal of given name is not in the menu
 	 */
-	public void setMealOfTheWeek(String mealName, MyFoodora myFoodora) throws FoodItemNotFoundException{
+	public void setMealOfTheWeek(String mealName, MyFoodora myFoodora) throws ItemNotFoundException{
 		Meal mealOfTheWeek = this.findMealByName(mealName);
 		this.getMenu().setMealOfTheWeek(mealOfTheWeek);
 		
@@ -220,9 +219,14 @@ public class Restaurant extends User {
 		this.shippedOrderPolicy = shippedOrderPolicy;
 	}
 
-	public void chooseShippedOrderPolicy (String shippedOrderPolicyName){
-		SorterFoodItem shippedOrderPolicy = this.sorterFoodItemFactory.chooseSorterFoodItem(shippedOrderPolicyName);
-		this.shippedOrderPolicy = shippedOrderPolicy;
+	public void setShippedOrderPolicy (String shippedOrderPolicyName){
+		SorterFoodItem sorterFoodItem = null;
+		switch(shippedOrderPolicyName){
+			case("counter"):
+				sorterFoodItem = new SorterCounter();
+				break;
+		}
+		this.shippedOrderPolicy = sorterFoodItem;
 	}
 		
 	@Override

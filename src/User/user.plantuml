@@ -1,0 +1,144 @@
+@startuml user
+package "User" {
+    class Board<ObsType> {
+        - static long serialVersionUID = -3052025800155606005L
+        - ArrayList<ObsType> obs
+        + Board()
+        + void addObs(ObsType obs)
+        + void removeObs(ObsType obs)
+        + ObsType findObsById(int uniqueID) throws OrderNotFoundException
+        + void clearBoard()
+        + String toString()
+    }
+    
+    class Courier extends User {
+        - static long serialVersionUID = 5347546696284207206L
+        - Location position
+        - String phoneNumber
+        - int counter = 0
+        - boolean onDuty = false
+        - Board<Order> board
+        + Courier(String name, String surname, String userName, String password)
+        + Courier(String name, String surname, String userName, String password, Location position, String phoneNumber)
+        + void acceptDeliveryCall(boolean decision, Order waitingOrder, MyFoodora myFoodora)
+        + Location getPosition()
+        + void setPosition(Location position)
+        + String getPhoneNumber()
+        + void setPhoneNumber(String phoneNumber)
+        + boolean isOnDuty()
+        + void setOnDuty(boolean onDuty)
+        + int getCounter()
+        + void increaseCounter()
+        + Board<Order> getBoard()
+    }
+
+    abstract class User {
+        - static long serialVersionUID = 6262632605692759298L
+        - String name
+        - String surname
+        - int ID
+        - String userName
+        - String password
+        - UserType userType
+        - static int nextID = 0
+        - boolean activated = false
+        + User(String name, String surname, String userName, String password)
+        + void unregister(MyFoodora myFoodora)
+        + String getName()
+        + void setName(String name)
+        + String getSurname()
+        + void setSurname(String surname)
+        + int getUniqueID()
+        + String getUserName()
+        + void setUserName(String userName)
+        + String getPassword()
+        + void setPassword(String password)
+        + boolean isActivated()
+        + void setActivated(boolean activated)
+        + UserType getUserType()
+        + void setUserType(UserType userType)
+        + static int getLastID()
+        + static void setLastID(int lastID)
+        + String toString()
+        + boolean equals(Object o)
+    }
+
+    class Customer extends User {
+        - static long serialVersionUID = 8234513441513658859L
+        - FidelityCard fidelityCard
+        - boolean consensus = false
+        - Board offerBoard
+        - Location address
+        - String email
+        - String phoneNumber
+        - FidelityCardFactory fidelityCardFactory = new FidelityCardFactory()
+        + Customer(String name, String surname, String userName, String password)
+        + Customer(String name, String surname, String userName, String password, Location address, String email, String phoneNumber)
+        + void addOffer(String offer)
+        + void setFidelityCard(FidelityCard fidelityCard)
+        + FidelityCard getFidelityCard()
+        + void registerFidelityCard(String cardType)
+        + void displayFidelityInfo()
+        + ArrayList<Order> getHistoryOfOrders(MyFoodora myFoodora)
+        + void submitOrder(Order order, boolean applyReduction, MyFoodora myFoodora)
+        + void payOrder(Order order)
+        + boolean isConsensus()
+        + void setConsensus(boolean consensus)
+        + Location getAddress()
+        + void setAddress(Location address)
+    }
+
+    class Location {
+        - static long serialVersionUID = 8165237176281387856L
+        - double x
+        - double y
+        + Location(double x, double y)
+        + double getX()
+        + void setX(double x)
+        + double getY()
+        + void setY(double y)
+        + String toString()
+    }
+
+    class Manager extends User {
+        - static long serialVersionUID = 2291793873364057722L
+        - MyFoodora myFoodora
+        - TargetProfitPolicyFactory targetProfitPolicyFactory
+        - DeliveryPolicyFactory deliveryPolicyFactory
+        + Manager(String name, String surname, String userName, String password, MyFoodora myFoodora)
+        + void addUser(UserType userType, String name, String surname, String userName, String password)
+        + void removeUser(int uniqueID)
+        + void activateUser(int uniqueID) throws UserNotFoundException
+        + void deactivateUser(int uniqueID) throws UserNotFoundException
+        + double totalIncome(Calendar calendar1, Calendar calendar2)
+        + double totalProfit(Calendar calendar1, Calendar calendar2)
+        + double averageIncomePerCostumer(Calendar calendar1, Calendar calendar2)
+        + void setProfitInfo(String profitInfo, double value)
+        + double meetTargetProfit(String profitInfo, double targetProfit) throws NonReachableTargetProfitException
+        + void setDeliveryPolicy(String deliveryPolicyChoice)
+        + Restaurant mostSellingRestaurant()
+        + Restaurant leastSellingRestaurant()
+        + Courier mostActiveCourier()
+        + Courier leastActiveCourier()
+        + MyFoodora getMyFoodora()
+        + void setMyFoodora(MyFoodora myFoodora)
+    }
+
+    class Restaurant extends User {
+        - static long serialVersionUID = -983973017288067345L
+        - Location address
+        - Menu menu
+        - int counter = 0
+        - FoodItemFactory foodItemFactory
+        - SorterFoodItemFactory sorterFoodItemFactory = new SorterFoodItemFactory()
+        - SorterFoodItem shippedOrderPolicy = new SorterCounter()
+        + Restaurant(String name, String surname, String userName, String password)
+        + Restaurant(String name, String userName, String password)
+    }
+}
+
+Board *-- "ArrayList<ObsType>" ObsType
+User <|-- Courier
+User <|-- Customer
+User <|-- Manager
+User <|-- Restaurant

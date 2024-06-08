@@ -54,7 +54,7 @@ public class FullMeal extends Meal {
 	}
 	
 	@Override
-	public void addDish(Dish dish) throws NoPlaceInMealException {
+	public void addDish(Dish dish) throws MeallsCompleteException {
 		this.mealVisitor.addDish2Meal(dish, this);
 	}
 	
