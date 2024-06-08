@@ -4,5 +4,6 @@
 /**
  * 
  */
-module MyFodoora {
+module MyFoodora {
+	requires junit;
 }

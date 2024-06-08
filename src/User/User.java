@@ -1,7 +1,7 @@
 package User;
 import Food.*;
+import OrderAndDelivery.*;
 import System.*;
-import OrderAndDilevery.*;
 
 public abstract class User implements java.io.Serializable {
 	

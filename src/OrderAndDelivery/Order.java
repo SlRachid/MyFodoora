@@ -1,4 +1,4 @@
-package OrderAndDilevery;
+package OrderAndDelivery;
 import Food.*;
 import User.*;
 import System.*;
