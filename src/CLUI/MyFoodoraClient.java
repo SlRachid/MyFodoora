@@ -2,14 +2,21 @@ package CLUI;
 import Food.*;
 import User.*;
 import OrderAndDelivery.*;
-import System.NotActiveAccException;
-import System.IncorrectInformationException;
 import System.MyFoodora;
 
 import java.io.*;
 import java.util.Scanner;
 import java.util.NoSuchElementException ;
 import java.util.StringTokenizer ;
+
+import Exceptions.IncorrectInformationException;
+import Exceptions.ItemNotFoundException;
+import Exceptions.MeallsCompleteException;
+import Exceptions.NonReachableTargetProfitException;
+import Exceptions.NotActiveAccException;
+import Exceptions.OrderNotFoundException;
+import Exceptions.UserNotFoundException;
+
 import java.util.ArrayList ;
 import java.util.Calendar;
 
@@ -982,7 +989,7 @@ public class MyFoodoraClient {
 			switch (commande){
 			case("help"):
 				System.out.println("\"showMenuItem <>\" : display your menu\n"
-						+ "\"addDishRestaurantMenu <dishName> <dishCategory> <foodCategory> <unitPrice>\" : add a new dish to your menu\n"
+						+ "\"addDishRestaurantMenu <dishName> <dishCategory> <DietCategory> <unitPrice>\" : add a new dish to your menu\n"
 						+ "\"createMeal <mealName> <mealCategory>\" : creates a new meal with mealname and mealCategory (\"full\" or \"half\")\n"
 						+ "\"addDish2Meal <dishName> <mealName>\" : adds a dish to a meal\n"
 						+ "\"showMeal <mealName>\" : displays the indicated meal\n"

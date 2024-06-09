@@ -10,6 +10,9 @@ import java.util.Locale;
 
 import org.junit.*;
 
+import Exceptions.ItemNotFoundException;
+import Exceptions.MeallsCompleteException;
+
 public class MealTest {
 	
 	private static MyFoodora myFoodora;

@@ -1,6 +1,16 @@
-package Food;
+package Exceptions;
 
 import java.io.Serializable ;
+
+import Food.Dessert;
+import Food.DietType;
+import Food.Dish;
+import Food.DishType;
+import Food.FullMeal;
+import Food.HalfMeal;
+import Food.MainDish;
+import Food.Meal;
+import Food.Starter;
 
 public class MenuItemFactory implements Serializable {
 	

@@ -9,6 +9,8 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import Exceptions.UserNotFoundException;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 

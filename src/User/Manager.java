@@ -5,6 +5,9 @@ import System.*;
 
 import java.util.Calendar;
 
+import Exceptions.NonReachableTargetProfitException;
+import Exceptions.UserNotFoundException;
+
 public class Manager extends User {
 	
 	/**

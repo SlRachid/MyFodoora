@@ -2,6 +2,8 @@ package Food;
 
 import java.io.Serializable;
 
+import Exceptions.MeallsCompleteException;
+
 /**
  * This visitor pattern enables us to handle different implementations of
  * computePrice and addDish methods, which depend on the nature of the meal.

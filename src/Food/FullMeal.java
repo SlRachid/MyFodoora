@@ -1,5 +1,7 @@
 package Food;
 
+import Exceptions.*;
+
 /**
  * Represents a full meal, including a main dish, starter, and dessert.
  */

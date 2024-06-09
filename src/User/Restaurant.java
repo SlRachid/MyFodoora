@@ -5,6 +5,10 @@ import System.*;
 
 import java.util.ArrayList;
 
+import Exceptions.ItemNotFoundException;
+import Exceptions.MeallsCompleteException;
+import Exceptions.MenuItemFactory;
+
 public class Restaurant extends User {
 	
 	private static final long serialVersionUID = -983973017288067345L;

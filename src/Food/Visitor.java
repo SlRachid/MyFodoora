@@ -1,5 +1,6 @@
 package Food;
 
+import Exceptions.*;
 
 public interface Visitor {	
 

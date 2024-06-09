@@ -9,6 +9,10 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import Exceptions.IncorrectInformationException;
+import Exceptions.NotActiveAccException;
+import Exceptions.UserNotFoundException;
+
 import java.util.*;
 
 public class MyFoodoraTest {

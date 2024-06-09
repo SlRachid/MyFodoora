@@ -1,4 +1,4 @@
-package OrderAndDelivery;
+package Exceptions;
 import Food.*;
 import User.*;
 import System.*;

@@ -9,6 +9,9 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import Exceptions.ItemNotFoundException;
+import Exceptions.MeallsCompleteException;
+
 
 public class RestaurantTest {
 	

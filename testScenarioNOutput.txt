@@ -1,0 +1,520 @@
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Rachid
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+The courier has been registered. Here are its properties : 
+courier ID n�13 Kobe Bryant username:kb24
+
+Type "help" to have a list of all available commands.
+The courier has been registered. Here are its properties : 
+courier ID n�14 Tim Duncan username:td21
+
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Here are the activated restaurants of the platform :
+Name : Fo
+	Address [x = 12.3, y = 478.21]
+Type "help" to have a list of all available commands.
+Here are the activated customers of the platform :
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+You have logged out.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Rachid
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+You have logged out.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Sorry username or password incorrect
+Please try again 
+
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Rachid
+Type "help" to have a list of all available commands.
+The total profit since the creation is :
+5.210374999999999
+Type "help" to have a list of all available commands.
+The total profit during this period is :
+0.0
+Type "help" to have a list of all available commands.
+Type "help" to have a list of all available commands.
+Here are the activated couriers of the platform :
+courier ID n�5 John Doe username:johndoe
+
+courier ID n�6 Jane Smith username:janesmith
+
+Type "help" to have a list of all available commands.
+Here are the activated customers of the platform :
+Type "help" to have a list of all available commands.
+Here are the activated restaurants of the platform :
+Name : Fo
+	Address [x = 12.3, y = 478.21]
+Type "help" to have a list of all available commands.
+You have logged out.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.
+Please use "login <username> <password> ."
+Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
+Or type "help <>" to obtain the list of the available commands.

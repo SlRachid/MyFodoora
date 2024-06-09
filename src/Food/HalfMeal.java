@@ -1,5 +1,7 @@
 package Food;
 
+import Exceptions.*;
+
 /**
  * Represents a half meal, including a main dish and a side dish.
  */

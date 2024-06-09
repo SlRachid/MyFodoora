@@ -1,4 +1,4 @@
-package Food;
+package Exceptions;
 
 public class MeallsCompleteException extends Exception {
 

@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import Exceptions.ItemNotFoundException;
+
 public class OrderTest {
 
 	private static MyFoodora myFoodora;
@@ -29,15 +31,15 @@ public class OrderTest {
 	public static void importMyFoodora(){
 		myFoodora = MyFoodora.loadMyFoodora();
 		try{
-			restaurant = (Restaurant) myFoodora.login("hoki", "password");
-			customer = (Customer) myFoodora.login("chaperouge", "qsdfghjkl");
-			
+			restaurant = (Restaurant) myFoodora.login("fo_pizza", "123");
+			customer = (Customer) myFoodora.login("AG", "password1");			
 			//we create an order
-			order = new Order("Massine",customer, new Location(1,2), restaurant);
+			//we create an order
+			order = new Order("Ali",customer,new Location(1.0,2.0) , restaurant);
 			//we fill the order with food items
-			Dish dish = restaurant.findDishByName("brochettes boeuf");
+			Dish dish = restaurant.findDishByName("Veggie pizza");
 			order.addDish(dish);
-			Meal meal = restaurant.findMealByName("M3");
+			Meal meal = restaurant.findMealByName("Family Pizza Feast");
 			order.addMeal(meal);
 		}catch(Exception e){}
 	}

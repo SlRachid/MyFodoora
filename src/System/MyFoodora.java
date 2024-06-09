@@ -2,6 +2,9 @@ package System;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+import Exceptions.IncorrectInformationException;
+import Exceptions.NotActiveAccException;
+import Exceptions.UserNotFoundException;
 import Food.*;
 import OrderAndDelivery.*;
 import User.*;

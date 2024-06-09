@@ -8,6 +8,8 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 
+import Exceptions.OrderNotFoundException;
+
 
 public class CourierTest {
 	private static MyFoodora myFoodora;

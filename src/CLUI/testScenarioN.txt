@@ -1,0 +1,177 @@
+login "ceo" "123456789"
+
+registerRestaurant "Gourmet Delight" "3,4" "gourmet" "finedine"
+registerRestaurant "Pizza Palace" "-3,2" "PP" "pizzalover"
+registerRestaurant "Sari3" "3,9" "KhafanZarban" "azerty"
+registerRestaurant "Lbari3" "9,8" "Bar3ni" "qwerty"
+registerRestaurant "Lfari3" "4,3" "Ghali3lik" "awili"
+
+registerCustomer "Moghit" "Yebari" "my" "123" "m@gmail.com"
+registerCustomer "John" "Doe" "john_doe" "password123" "john.doe@example.com"
+registerCustomer "Jane" "Smith" "jane_smith" "pass456" "jane.smith@example.com"
+registerCustomer "Alice" "Johnson" "alice_j" "alice789" "alice.j@example.com"
+registerCustomer "Bob" "Brown" "bob_b" "bob_pass" "bob.b@example.com"
+registerCustomer "Charlie" "Williams" "charlie_w" "charlie321" "charlie.w@example.com"
+registerCustomer "David" "Jones" "david_j" "david_pass" "david.j@example.com"
+
+registerCourier "Kobe" "Bryant" "kb24" "mamba" "-2,-2"
+registerCourier "Tim" "Duncan" "td21" "fundamentals" "3,2"
+
+showRestaurantTop
+showCustomers
+setDeliveryPolicy "FastestDelivery"
+associateCard "LJ23" "LotteryFidelityCard"
+logout
+
+login "gourmet" "finedine"
+addDishRestaurantMenu "Bruschetta" "Starter" "GlutenFree" "5"
+addDishRestaurantMenu "Lasagna" "Main" "Standard" "9"
+addDishRestaurantMenu "Tiramisu" "Dessert" "Vegetarian" "4"
+addDishRestaurantMenu "Flan" "Dessert" "Vegetarian" "6"
+createMeal "Italian Feast" "Standard" "Full"
+addDish2Meal "Bruschetta" "Italian Feast"
+addDish2Meal "Lasagna" "Italian Feast"
+addDish2Meal "Tiramisu" "Italian Feast"
+addDish2Meal "Flan" "Italian Feast"
+saveMeal "Italian Feast"
+setSpecialOffer "Italian Feast"
+showMeal "Italian Feast"
+logout
+login "customer" "mjordan" "goat"
+setConsensus "true"
+setCustomerInfo "0735896541" "michael.jordan@nba.com"
+logout
+
+login "PP" "pizzalover"
+addDishRestaurantMenu "Garlic Bread" "Starter" "Vegetarian" "3"
+addDishRestaurantMenu "Pepperoni Pizza" "Main" "Standard" "10"
+addDishRestaurantMenu "Chocolate Brownie" "Dessert" "Vegetarian" "4"
+addDishRestaurantMenu "pizza norway" "Main" "Standard" "12"
+createMeal "Pizza Extravaganza" "Standard" "Half"
+addDish2Meal "Garlic Bread" "Pizza Extravaganza"
+addDish2Meal "Pepperoni Pizza" "Pizza Extravaganza"
+saveMeal "Pizza Extravaganza"
+setSpecialOffer "Pizza Extravaganza"
+createMeal "Pizza Extravaganza XL" "Standard" "Full"
+addDish2Meal "Garlic Bread" "Pizza Extravaganza XL"
+addDish2Meal "Pepperoni Pizza" "Pizza Extravaganza XL"
+addDish2Meal "Chocolate Brownie" "Pizza Extravaganza XL"
+addDish2Meal "pizza norway" "Pizza Extravaganza XL"
+saveMeal "Pizza Extravaganza XL"
+setSpecialOffer "Pizza Extravaganza XL"
+removeFromSpecialOffer "Pizza Extravaganza"
+logout
+
+login "Sari3" "azerty"
+addDishRestaurantMenu "Sushi" "Starter" "GlutenFree" "5"
+addDishRestaurantMenu "Sashimi" "Main" "Standard" "9"
+addDishRestaurantMenu "Mochi" "Dessert" "Vegetarian" "4"
+addDishRestaurantMenu "Miso Soup" "Dessert" "Vegetarian" "6"
+createMeal "Japanese Feast" "Standard" "Full"
+addDish2Meal "Sushi" "Japanese Feast"
+addDish2Meal "Sashimi" "Japanese Feast"
+addDish2Meal "Mochi" "Japanese Feast"
+addDish2Meal "Miso Soup" "Japanese Feast"
+saveMeal "Japanese Feast"
+setSpecialOffer "Japanese Feast"
+showMeal "Japanese Feast"
+logout
+
+login "Lbari3" "qwerty"
+addDishRestaurantMenu "Hummus" "Starter" "Vegetarian" "3"
+addDishRestaurantMenu "Shawarma" "Main" "Standard" "10"
+addDishRestaurantMenu "Baklava" "Dessert" "Vegetarian" "4"
+addDishRestaurantMenu "Falafel" "Main" "Standard" "12"
+createMeal "Middle Eastern Feast" "Standard" "Half"
+addDish2Meal "Hummus" "Middle Eastern Feast"
+addDish2Meal "Shawarma" "Middle Eastern Feast"
+saveMeal "Middle Eastern Feast"
+setSpecialOffer "Middle Eastern Feast"
+createMeal "Middle Eastern Feast XL" "Standard" "Full"
+addDish2Meal "Hummus" "Middle Eastern Feast XL"
+addDish2Meal "Shawarma" "Middle Eastern Feast XL"
+addDish2Meal "Baklava" "Middle Eastern Feast XL"
+addDish2Meal "Falafel" "Middle Eastern Feast XL"
+saveMeal "Middle Eastern Feast XL"
+setSpecialOffer "Middle Eastern Feast XL"
+removeFromSpecialOffer "Middle Eastern Feast"
+logout
+
+login "Lfari3" "awili"
+addDishRestaurantMenu "Tajine" "Starter" "Vegetarian" "5"
+addDishRestaurantMenu "Couscous" "Main" "Standard" "9"
+addDishRestaurantMenu "Baklava" "Dessert" "Vegetarian" "4"
+addDishRestaurantMenu "Mint Tea" "Dessert" "Vegetarian" "6"
+createMeal "Moroccan Feast" "Standard" "Full"
+addDish2Meal "Tajine" "Moroccan Feast"
+addDish2Meal "Couscous" "Moroccan Feast"
+addDish2Meal "Baklava" "Moroccan Feast"
+addDish2Meal "Mint Tea" "Moroccan Feast"
+saveMeal "Moroccan Feast"
+setSpecialOffer "Moroccan Feast"
+showMeal "Moroccan Feast"
+logout
+
+
+login "ceo" "123456789"
+showMenuItem "Gourmet Delight"
+showMenuItem "Pizza Palace"
+showMenuItem "Sari3"
+showMenuItem "Lbari3"
+showMenuItem "Lfari3"
+registerCustomer "Emma" "Johnson" "emma_j" "emma@example.com" "password456"
+setOfferContact "emma@example.com"
+registerCourier "LeBron" "James" "LJ23" "forward" "kingjames"
+offDuty "LJ23"
+registerRestaurant "Yummy Delights" "2,4" "yummy" "tastyfood"
+logout
+
+
+
+
+login "john_doe" "password123"
+createOrder "Gourmet Delight" "Family dinner"
+addItem2Order "Family dinner" "Italian Feast"
+addItem2Order "Family dinner" "Tiramisu"
+endOrder "Family dinner" "12/07/2022"
+logout
+
+findDeliverer "Family dinner"
+login "courier" "td21" "fundamentals"
+offDuty "td21"
+logout
+
+findDeliverer "Family dinner"
+login "courier" "td21" "fundamentals"
+onDuty "td21"
+logout
+
+login "my" "123"
+createOrder "Pizza Palace" "Game night"
+addItem2Order "Game night" "Pizza Extravaganza"
+addItem2Order "Game night" "Garlic Bread"
+addItem2Order "Game night" "Chocolate Brownie"
+endOrder "Game night" "15/10/2022"
+logout
+
+login "gourmet" "finedine"
+createOrder "Gourmet Delight" "Birthday Bash"
+addItem2Order "Birthday Bash" "Italian Feast"
+addItem2Order "Birthday Bash" "Italian Feast"
+addItem2Order "Birthday Bash" "Italian Feast"
+addItem2Order "Birthday Bash" "Tiramisu"
+addItem2Order "Birthday Bash" "Tiramisu"
+addItem2Order "Birthday Bash" "Tiramisu"
+endOrder "Birthday Bash" "22/11/2022"
+logout
+
+login "ceo" "123456789"
+showTotalProfit
+showTotalProfit "01/11/2022" "01/12/2022"
+setProfitPolicy "TargetProfitDeliveryCost" "25"
+showCourierDeliveries
+showCustomers
+showRestaurantTop
+logout
+
+exit

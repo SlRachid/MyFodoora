@@ -1,4 +1,4 @@
-package User;
+package Exceptions;
 import Food.*;
 
 

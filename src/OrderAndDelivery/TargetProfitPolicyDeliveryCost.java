@@ -5,6 +5,8 @@ import User.*;
 
 import java.io.Serializable ;
 
+import Exceptions.*;
+
 public class TargetProfitPolicyDeliveryCost implements TargetProfitPolicy,Serializable {
 
 	/**
