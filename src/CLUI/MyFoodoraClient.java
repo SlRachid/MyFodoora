@@ -29,6 +29,10 @@ public class MyFoodoraClient {
 	private static User currentUser ;
 	private static Order currentOrder = null ;
 
+	
+	/** 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		myFoodora = MyFoodora.loadMyFoodora();
 
