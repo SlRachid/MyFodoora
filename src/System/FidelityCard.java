@@ -5,7 +5,10 @@ import User.*;
 
 public abstract class FidelityCard implements java.io.Serializable {
 	
-	private static final long serialVersionUID = -8552095078324661097L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -9167954656277486922L;
 	/**
 	 * the type of the fidelity card : basic, point or lottery
 	 */

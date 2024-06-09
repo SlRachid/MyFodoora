@@ -11,7 +11,7 @@ public class Restaurant extends User {
 	private Location address ;
 	private Menu menu ;
 	private int counter = 0 ;
-	private MenuItemFactory foodItemFactory ;
+	private MenuItemFactory menuItemFactory ;
 	
 	/**
 	 * the policy to sort food items that have been shipped in completed orders
@@ -29,7 +29,7 @@ public class Restaurant extends User {
 		super(name, "", userName, password);
 		this.address = null ;
 		this.menu = new Menu() ;
-		this.foodItemFactory = new MenuItemFactory();
+		this.menuItemFactory = new MenuItemFactory();
 		
 		this.setUserType (UserType.restaurant) ;
 	}
@@ -45,7 +45,7 @@ public class Restaurant extends User {
 		super(name, "", userName, password);
 		this.address = address ;
 		this.menu = new Menu() ;
-		this.foodItemFactory = new MenuItemFactory();
+		this.menuItemFactory = new MenuItemFactory();
 
 		this.setUserType (UserType.restaurant) ;
 	}
@@ -58,7 +58,7 @@ public class Restaurant extends User {
 	 * @param type : the type of dish "standard", "vegetarian" or "glutenFree"
 	 */
 	public void addDish(DishType dishType, String name, double price, DietType type){
-		Dish dish = this.foodItemFactory.createDish(dishType, name, price, type);
+		Dish dish = this.menuItemFactory.createDish(dishType, name, price, type);
 		this.menu.addDish(dish);
 	}
 	
@@ -94,7 +94,7 @@ public class Restaurant extends User {
 	 * @param name : the name of the meal
 	 */
 	public void addMeal(String mealType, String name){
-		Meal meal = this.foodItemFactory.createMeal(mealType, name);
+		Meal meal = this.menuItemFactory.createMeal(mealType, name);
 		this.menu.addMeal(meal);
 	}
 	

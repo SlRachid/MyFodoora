@@ -101,7 +101,7 @@ public class ManagerTest {
 		Restaurant mostSellingRestaurant = manager.mostSellingRestaurant();
 		System.out.println(mostSellingRestaurant);
 		
-		assertEquals("Le Hoki", mostSellingRestaurant.getName());
+		assertEquals("Fo", mostSellingRestaurant.getName());
 	}
 
 	@Test
@@ -109,7 +109,7 @@ public class ManagerTest {
 		Restaurant leastSellingRestaurant = manager.leastSellingRestaurant();
 		System.out.println(leastSellingRestaurant);	
 		
-		assertEquals("Dominos", leastSellingRestaurant.getName());
+		assertEquals("Sushi Delight", leastSellingRestaurant.getName());
 	}
 
 	@Test
@@ -117,7 +117,7 @@ public class ManagerTest {
 		Courier mostActiveCourier = manager.mostActiveCourier();
 		System.out.println(mostActiveCourier);
 		
-		assertEquals("Peter", mostActiveCourier.getName());
+		assertEquals("John", mostActiveCourier.getName());
 	}
 
 	@Test
@@ -125,6 +125,6 @@ public class ManagerTest {
 		Courier leastActiveCourier = manager.leastActiveCourier();
 		System.out.println(leastActiveCourier);
 		
-		assertEquals("Toby", leastActiveCourier.getName());
+		assertEquals("Michael", leastActiveCourier.getName());
 	}
 }

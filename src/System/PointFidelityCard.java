@@ -5,7 +5,10 @@ import User.*;
 
 public class PointFidelityCard extends FidelityCard {
 
-	private static final long serialVersionUID = -8859809521402683700L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6380381388517282176L;
 	/**
 	 * the number of fidelity points
 	 */

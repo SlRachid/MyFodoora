@@ -5,7 +5,11 @@ import User.*;
 
 public class IncorrectInformationException extends Exception {
 
-	private static final long serialVersionUID = -9121993161560782016L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4151706954253469822L;
 
 	public IncorrectInformationException() {
 		// TODO Auto-generated constructor stub

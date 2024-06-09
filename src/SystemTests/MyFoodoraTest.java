@@ -49,19 +49,19 @@ public class MyFoodoraTest {
 
 	@Test
 	public void testLogin() throws NotActiveAccException, IncorrectInformationException{
-		Manager manager = (Manager)myFoodora.login("prabakarans", "birthdaydate");
+		Manager manager = (Manager)myFoodora.login("RS", "azerty");
 		System.out.println(manager + "\n");
 	}
 	
 	@Test (expected = IncorrectInformationException.class)
 	public void testLoginWhenWrongIdentification() throws NotActiveAccException, IncorrectInformationException{
-		Manager manager = (Manager)myFoodora.login("prabakarans", "datebirthday");
+		Manager manager = (Manager)myFoodora.login("RS", "ay");
 		System.out.println(manager);
 	}
 	
 	@Test (expected = NotActiveAccException.class)
 	public void testLoginWhenAccountDeactivated() throws NotActiveAccException, IncorrectInformationException, UserNotFoundException{
-		Manager manager = (Manager)myFoodora.login("prabakarans", "birthdaydate");
+		Manager manager = (Manager)myFoodora.login("RS", "azerty");
 		//the manager deactivate the account of the user 0
 		manager.deactivateUser(1);
 		

@@ -7,7 +7,11 @@ import java.io.Serializable ;
 
 public class TargetProfitPolicyMarkup implements TargetProfitPolicy,Serializable {
 	
-	private static final long serialVersionUID = -37289269800490538L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1025395522608278498L;
 
 	/**
 	 * Sets the markup percentage

@@ -9,8 +9,13 @@ import java.util.Locale;
 
 public class Order implements java.io.Serializable {
 	
-	private static final long serialVersionUID = -372769376339718757L;
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8854065909989557711L;
+
+
 	/**
 	 * the name of the order
 	 */
@@ -176,7 +181,7 @@ public class Order implements java.io.Serializable {
 	public void setCourier(Courier courier) {
 		this.courier = courier;
 		//we put the order on the board of the courier
-		this.courier.getBoard().addObs(this);
+		this.courier.getInterfaceBoard().addObs(this);
 	}
 
 	/**

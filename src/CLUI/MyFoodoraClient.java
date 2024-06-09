@@ -34,7 +34,7 @@ public class MyFoodoraClient {
 		String commande = "" ;
 		closeLoop :
 			while (!commande.equals("close")){
-				System.out.println("Please use \"login <username> <password> .\"\n" +"Or \"registerCustomer <firstName> <lastName> <username> <password> <address : X,Y>\" if you're a new customer here.\n" 
+				System.out.println("Please use \"login <username> <password> .\"\n" +"Or \"registerCustomer <firstName> <lastName> <username> <password> <emailAddress>\" if you're a new customer here.\n" 
 						+ "Or type \"help <>\" to obtain the list of the available commands.");
 				input = sc.nextLine();
 				st = new StringTokenizer(input) ;
@@ -409,7 +409,7 @@ public class MyFoodoraClient {
 	 */
 	private static String courierInterface(){
 		Courier currentCourier = (Courier)currentUser ;
-		System.out.println(currentCourier.getBoard());
+		System.out.println(currentCourier.getInterfaceBoard());
 		boolean error = false ;
 		String commande ;
 		try{
@@ -472,7 +472,7 @@ public class MyFoodoraClient {
 					error = true ;
 				}
 				try{
-					currentCourier.acceptDeliveryCall(bAnswer, currentCourier.getBoard().findObsById(orderID), myFoodora);
+					currentCourier.acceptDeliveryCall(bAnswer, currentCourier.getInterfaceBoard().findObsById(orderID), myFoodora);
 					System.out.println("You have "+(bAnswer?"accepted":"refused")+" to deliver the order n�"+ orderID+".\n") ;
 				}catch(OrderNotFoundException e){
 					System.err.println("This Order ID "+orderID+" is not in your board.");

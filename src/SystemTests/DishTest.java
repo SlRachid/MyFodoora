@@ -13,21 +13,21 @@ public class DishTest {
 
 	@Test
 	public void testGetDishType() {
-		MainDish mainDish = new MainDish("quiche aux legumes", 18, DietType.vegetarian);
-		assertEquals("The dish type must be compute automatically", DishType.main, mainDish.getDishType());
+		MainDish mainDish = new MainDish("pizza vegetarienne", 18, DietType.vegetarian);
+		assertEquals("The dish type must be set automatically to main", DishType.main, mainDish.getDishType());
 	}
 
 	@Test
 	public void testToString() {
-		Starter starter = new Starter("mozzarella", 4, DietType.vegetarian);
+		Starter starter = new Starter("salade marocaine", 1, DietType.vegetarian);
 		System.out.println(starter);
 	}
 
 	@Test
 	public void testEqualsObject() {
-		Dessert dessert = new Dessert("gateau au pois-chiche", 18, DietType.vegetarian);
-		Dessert dessertCopy = new Dessert("gateau au pois-chiche", 18, DietType.vegetarian);
-		assertEquals("The overriden equals function enables to compare Dish objects", dessert, dessertCopy);
+		Starter starter = new Starter("salade marocaine", 1, DietType.vegetarian);
+		Starter startercopy = new Starter("salade marocaine", 1, DietType.vegetarian);
+		assertEquals("The overriden equals function enables to compare Dish objects", starter, startercopy);
 	}
 
 }

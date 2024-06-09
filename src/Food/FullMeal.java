@@ -1,16 +1,30 @@
 package Food;
 
+/**
+ * Represents a full meal, including a main dish, starter, and dessert.
+ */
 public class FullMeal extends Meal {
 
-    private static final long serialVersionUID = -7845792807622942588L;
-
+    /**
+	 * Serial version UID for serialization.
+	 */
+	private static final long serialVersionUID = 6365575895005257189L;
+	
+	/**
+     * The starter of the meal.
+     */
     private Starter starter;
+    
+    /**
+     * The dessert of the meal.
+     */
     private Dessert dessert;
 
     /**
-     * Constructor for creating a new FullMeal with only a name.
+     * Constructs a new FullMeal with only a name.
      * This is typically used to initialize a meal that can have dishes added later.
-     * @param name the name of the meal
+     * 
+     * @param name The name of the meal.
      */
     public FullMeal(String name) {
         super(name);
@@ -19,11 +33,12 @@ public class FullMeal extends Meal {
     }   
     
     /**
-     * Constructor for creating a FullMeal with a main dish, starter, and dessert.
-     * @param name the name of the meal
-     * @param mainDish the main dish of the meal
-     * @param starter the starter of the meal
-     * @param dessert the dessert of the meal
+     * Constructs a FullMeal with a main dish, starter, and dessert.
+     * 
+     * @param name The name of the meal.
+     * @param mainDish The main dish of the meal.
+     * @param starter The starter of the meal.
+     * @param dessert The dessert of the meal.
      */
     public FullMeal(String name, MainDish mainDish, Starter starter, Dessert dessert) {
         super(name, mainDish);
@@ -42,7 +57,8 @@ public class FullMeal extends Meal {
     /**
      * Calculates and returns the price of the full meal.
      * The price is computed using a visitor pattern.
-     * @return the total price of the meal
+     * 
+     * @return The total price of the meal.
      */
     @Override
     public double getPrice() {
@@ -52,8 +68,9 @@ public class FullMeal extends Meal {
 
     /**
      * Adds a dish to the full meal.
-     * @param dish the dish to be added
-     * @throws MeallsCompleteException if the meal is already complete
+     * 
+     * @param dish The dish to be added.
+     * @throws MeallsCompleteException If the meal is already complete.
      */
     @Override
     public void addDish(Dish dish) throws MeallsCompleteException {
@@ -62,7 +79,8 @@ public class FullMeal extends Meal {
     
     /**
      * Sets the starter for the full meal.
-     * @param starter the starter to be set
+     * 
+     * @param starter The starter to be set.
      */
     public void setStarter(Starter starter) {
         this.starter = starter;
@@ -70,7 +88,8 @@ public class FullMeal extends Meal {
 
     /**
      * Gets the starter of the full meal.
-     * @return the starter of the meal
+     * 
+     * @return The starter of the meal.
      */
     public Starter getStarter() {
         return starter;
@@ -78,7 +97,8 @@ public class FullMeal extends Meal {
 
     /**
      * Sets the dessert for the full meal.
-     * @param dessert the dessert to be set
+     * 
+     * @param dessert The dessert to be set.
      */
     public void setDessert(Dessert dessert) {
         this.dessert = dessert;
@@ -86,7 +106,8 @@ public class FullMeal extends Meal {
 
     /**
      * Gets the dessert of the full meal.
-     * @return the dessert of the meal
+     * 
+     * @return The dessert of the meal.
      */
     public Dessert getDessert() {
         return dessert;
@@ -94,7 +115,8 @@ public class FullMeal extends Meal {
     
     /**
      * Provides a string representation of the full meal.
-     * @return a string containing the meal details
+     * 
+     * @return A string containing the meal details.
      */
     @Override
     public String toString() {

@@ -1,11 +1,9 @@
 package Food;
 
+/**
+ * Represents a meal, which may include a main dish and additional items.
+ */
 public abstract class Meal extends MenuItem {
-
-    /**
-     * Unique identifier for serialization.
-     */
-    private static final long serialVersionUID = 519790930574147324L;
 
     /**
      * The name of the meal.
@@ -34,7 +32,8 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Constructs a Meal object with a specified name and no main dish.
-     * @param name the name of the meal
+     * 
+     * @param name The name of the meal.
      */
     public Meal(String name) {
         this.name = name;
@@ -43,8 +42,9 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Constructs a Meal object with a specified name and main dish.
-     * @param name the name of the meal
-     * @param mainDish the main dish of the meal
+     * 
+     * @param name     The name of the meal.
+     * @param mainDish The main dish of the meal.
      */
     public Meal(String name, MainDish mainDish) {
         this.name = name;
@@ -53,21 +53,23 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Abstract method to calculate and return the price of the meal.
-     * @return the price of the meal
+     * 
+     * @return The price of the meal.
      */
     public abstract double getPrice();
 
     /**
      * Abstract method to add a dish to the meal.
-     * @param dish the dish to be added
-     * @throws MeallsCompleteException if the meal is already complete
+     * 
+     * @param dish The dish to be added.
+     * @throws MeallsCompleteException If the meal is already complete.
      */
     public abstract void addDish(Dish dish) throws MeallsCompleteException;
 
     /**
-     * Updates the meal's discount factor based on the menu's discount policies
-     * and recalculates the meal's price.
-     * @param menu the menu containing the meal
+     * Updates the meal's discount factor based on the menu's discount policies and recalculates the meal's price.
+     * 
+     * @param menu The menu containing the meal.
      */
     public void update(Menu menu) {
         double genericDiscountFactor = menu.getGenericDiscountFactor();
@@ -86,7 +88,8 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Gets the name of the meal.
-     * @return the name of the meal
+     * 
+     * @return The name of the meal.
      */
     public String getName() {
         return name;
@@ -94,7 +97,8 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Sets the name of the meal.
-     * @param name the new name of the meal
+     * 
+     * @param name The new name of the meal.
      */
     public void setName(String name) {
         this.name = name;
@@ -102,7 +106,8 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Sets the main dish of the meal.
-     * @param mainDish the new main dish of the meal
+     * 
+     * @param mainDish The new main dish of the meal.
      */
     public void setMainDish(MainDish mainDish) {
         this.mainDish = mainDish;
@@ -110,7 +115,8 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Gets the main dish of the meal.
-     * @return the main dish of the meal
+     * 
+     * @return The main dish of the meal.
      */
     public MainDish getMainDish() {
         return mainDish;
@@ -118,7 +124,8 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Sets the diet type of the meal.
-     * @param type the new diet type of the meal
+     * 
+     * @param type The new diet type of the meal.
      */
     public void setType(DietType type) {
         this.type = type;
@@ -126,7 +133,8 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Gets the diet type of the meal.
-     * @return the diet type of the meal
+     * 
+     * @return The diet type of the meal.
      */
     public DietType getType() {
         return type;
@@ -134,15 +142,17 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Gets the discount factor applied to the meal price.
-     * @return the discount factor
+     * 
+     * @return The discount factor.
      */
     public double getDiscountFactor() {
         return discountFactor;
     }
 
     /**
-     * Provides a string representation of the meal, including its name, price, type, and main dish.
-     * @return a string representation of the meal
+     * Provides a string representation of the meal.
+     * 
+     * @return A string containing the meal details.
      */
     @Override
     public String toString() {
@@ -152,8 +162,9 @@ public abstract class Meal extends MenuItem {
 
     /**
      * Checks if this meal is equal to another object.
-     * @param o the object to compare with
-     * @return true if the meals have the same name, false otherwise
+     * 
+     * @param o The object to compare with.
+     * @return true if the meals have the same name, false otherwise.
      */
     @Override
     public boolean equals(Object o) {
@@ -167,12 +178,6 @@ public abstract class Meal extends MenuItem {
         return name.equals(meal.name);
     }
 
-    /**
-     * Returns a hash code value for the object based on its name.
-     * @return a hash code value for this object
-     */
-    @Override
-    public int hashCode() {
-        return name.hashCode();
-    }
+   
+
 }

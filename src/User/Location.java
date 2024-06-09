@@ -5,7 +5,7 @@ public class Location implements java.io.Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 8165237176281387856L;
+	private static final long serialVersionUID = -6942164591492276184L;
 	double x ;
 	double y ;
 

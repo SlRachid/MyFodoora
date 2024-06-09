@@ -7,7 +7,10 @@ import java.util.ArrayList;
 
 public class Customer extends User {
 	
-	private static final long serialVersionUID = 8234513441513658859L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5507595169960420647L;
 	private FidelityCard fidelityCard ;
 	/**
 	 * true if the customer wants to be notified whenever a new special offer is set

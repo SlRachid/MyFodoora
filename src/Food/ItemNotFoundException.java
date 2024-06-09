@@ -3,7 +3,10 @@ package Food;
 
 public class ItemNotFoundException extends Exception {
 
-	private static final long serialVersionUID = 7752643160099900523L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7482377274115133811L;
 	public ItemNotFoundException(){}
 	/**
 	 * @param arg0

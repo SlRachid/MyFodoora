@@ -2,8 +2,12 @@ package Food;
 
 public class MainDish extends Dish{
 	
-	private static final long serialVersionUID = 4693141788247499246L;
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4693141788247499246L;
+
 	/**
 	 * 
 	 * @param name

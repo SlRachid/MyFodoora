@@ -5,7 +5,11 @@ import User.*;
 
 public class NotActiveAccException extends Exception {
 
-	private static final long serialVersionUID = -7830538404004078430L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5000282531066330327L;
 
 	public NotActiveAccException() {
 		// TODO Auto-generated constructor stub

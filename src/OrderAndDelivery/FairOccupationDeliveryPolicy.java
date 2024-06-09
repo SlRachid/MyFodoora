@@ -7,7 +7,10 @@ import java.io.Serializable ;
 
 public class FairOccupationDeliveryPolicy implements DeliveryPolicy,Serializable {
 
-	private static final long serialVersionUID = -8248152607689273031L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6928498192380082879L;
 
 	public FairOccupationDeliveryPolicy() {
 	}

@@ -7,7 +7,11 @@ import java.io.Serializable ;
 
 public class DeliveryPolicyFactory implements Serializable {
 
-	private static final long serialVersionUID = -913465406279723207L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1312931458076763729L;
 
 	public DeliveryPolicyFactory() {
 	}

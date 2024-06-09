@@ -4,7 +4,12 @@ import java.io.Serializable ;
 
 public class MenuItemFactory implements Serializable {
 	
-	private static final long serialVersionUID = 6129494191504757935L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6358064614386568642L;
+
 
 	public MenuItemFactory() {}
 	

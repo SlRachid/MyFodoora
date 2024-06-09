@@ -7,7 +7,11 @@ import java.io.Serializable ;
 
 public class TargetProfitPolicyServiceFee implements TargetProfitPolicy,Serializable {
 
-	private static final long serialVersionUID = -326916755426029061L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1270042720937004154L;
 
 	/**
 	 * Sets the service fee

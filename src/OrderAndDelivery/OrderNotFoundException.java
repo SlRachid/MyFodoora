@@ -5,7 +5,11 @@ import System.*;
 
 public class OrderNotFoundException extends Exception {
 
-	private static final long serialVersionUID = 5554256869096417785L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6544924684037107244L;
 
 
 	public OrderNotFoundException() {

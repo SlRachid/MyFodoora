@@ -4,7 +4,11 @@ import Food.*;
 
 public class UserNotFoundException extends Exception {
 
-	private static final long serialVersionUID = -673308961619162935L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1426582701583896148L;
 
 	public UserNotFoundException() {
 		// TODO Auto-generated constructor stub

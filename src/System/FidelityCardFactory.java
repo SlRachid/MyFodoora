@@ -7,7 +7,11 @@ import java.io.Serializable ;
 
 public class FidelityCardFactory implements Serializable {
 	
-	private static final long serialVersionUID = 3053874932358397747L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4803058272557334495L;
 
 	public FidelityCardFactory() {
 	}

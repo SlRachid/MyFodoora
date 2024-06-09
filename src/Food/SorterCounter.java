@@ -10,9 +10,13 @@ import java.io.Serializable;
  */
 public class SorterCounter implements SorterMenuItem, Serializable {
 
-    private static final long serialVersionUID = -2130889579431738571L;
 
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -716777925612230729L;
+
+	@Override
     public ArrayList<MenuItem> sort(ArrayList<MenuItem> foodItems) {
         // Make a copy of the list to avoid modifying the original list
         ArrayList<MenuItem> sortedFoodItems = (ArrayList<MenuItem>) foodItems.clone();

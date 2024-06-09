@@ -5,7 +5,10 @@ package Food;
  */
 public abstract class MenuItem implements java.io.Serializable {
 
-	private static final long serialVersionUID = -1368991719052092282L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -698433074705384736L;
 	protected double price = 0;
 	/**
 	 * the number of times the food item has been shipped 

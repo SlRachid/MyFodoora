@@ -29,15 +29,15 @@ public class CustomerTest {
 	public static void importMyFoodora(){
 		myFoodora = MyFoodora.loadMyFoodora();
 		try{
-			restaurant = (Restaurant) myFoodora.login("hoki", "password");
-			customer = (Customer) myFoodora.login("chaperouge", "qsdfghjkl");
+			restaurant = (Restaurant) myFoodora.login("fo_pizza", "123");
+			customer = (Customer) myFoodora.login("AG", "password1");
 			
 			//we create an order
-			order = new Order("Rachid",customer,new Location(1.0,2.0), restaurant);
+			order = new Order("Ali",customer,new Location(1.0,2.0) , restaurant);
 			//we fill the order with food items
-			Dish dish = restaurant.findDishByName("brochettes boeuf");
+			Dish dish = restaurant.findDishByName("Veggie pizza");
 			order.addDish(dish);
-			Meal meal = restaurant.findMealByName("M3");
+			Meal meal = restaurant.findMealByName("Family Pizza Feast");
 			order.addMeal(meal);
 			
 		}catch(Exception e){}
@@ -67,7 +67,6 @@ public class CustomerTest {
 		order.getCourier().acceptDeliveryCall(true, order, myFoodora);
 		//the customer pays the price of the order
 		customer.payOrder(order);
-		
 		//we check that the order is in completed orders of myFoodora
 		assertTrue(myFoodora.getCompletedOrders().contains(order));
 		

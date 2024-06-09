@@ -55,7 +55,7 @@ public class OrderTest {
 		Courier courier = order.getCourier();
 		System.out.println(courier);
 		//we check that the order is on the board of the courier
-		System.out.println(courier.getBoard());
+		System.out.println(courier.getInterfaceBoard());
 	}
 
 	@Test

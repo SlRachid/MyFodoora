@@ -9,7 +9,10 @@ import System.*;
 
 public class Courier extends User {
 
-	private static final long serialVersionUID = 7761609339188995456L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4111124390848306674L;
 	private Location position ;
 	private String phoneNumber ;
 	/**
@@ -23,7 +26,7 @@ public class Courier extends User {
 	/**
 	 * show the delivery calls
 	 */
-	private Interface<Order> board;
+	private Interface<Order> interfaceBoard;
 
 	/**
 	 * creates a courier who will use the MyFoodora platform
@@ -36,7 +39,7 @@ public class Courier extends User {
 		super(name, surname, userName, password);
 		this.position = null ;
 		this.phoneNumber = "" ;
-		this.board = new Interface<Order>();
+		this.interfaceBoard = new Interface<Order>();
 
 		this.setUserType (UserType.courier) ;
 	}
@@ -54,7 +57,7 @@ public class Courier extends User {
 		super(name, surname, userName, password);
 		this.position = position ;
 		this.phoneNumber = phoneNumber ;
-		this.board = new Interface<Order>();
+		this.interfaceBoard = new Interface<Order>();
 		
 		this.setUserType (UserType.courier) ;
 	}
@@ -73,7 +76,7 @@ public class Courier extends User {
 			this.onDuty = false;
 			myFoodora.getDeliveryPolicy().allocateCourier(myFoodora, waitingOrder);
 		}
-		this.board.removeObs(waitingOrder);
+		this.interfaceBoard.removeObs(waitingOrder);
 		
 	}
 
@@ -109,7 +112,7 @@ public class Courier extends User {
 		numOfDeliveries++;
 	}
 
-	public Interface<Order> getBoard() {
-		return board;
+	public Interface<Order> getInterfaceBoard() {
+		return interfaceBoard;
 	}
 }

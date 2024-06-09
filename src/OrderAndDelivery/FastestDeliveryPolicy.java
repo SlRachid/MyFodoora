@@ -7,7 +7,11 @@ import java.io.Serializable ;
 
 public class FastestDeliveryPolicy implements DeliveryPolicy,Serializable {
 
-	private static final long serialVersionUID = 776446129127381700L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1159520366388815667L;
 
 	public FastestDeliveryPolicy() {
 		// TODO Auto-generated constructor stub

@@ -9,8 +9,11 @@ import java.util.ArrayList ;
 
 public class LotteryFidelityCard extends FidelityCard {
 
-	private static final long serialVersionUID = 7828283286969973152L;
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2863009931218382397L;
 	/**
 	 * The probability of having the first meal free
 	 */

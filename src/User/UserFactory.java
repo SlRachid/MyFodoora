@@ -9,7 +9,11 @@ import java.io.Serializable ;
  */
 public class UserFactory implements Serializable {
 
-	private static final long serialVersionUID = -6020715672334438764L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2136067834275559198L;
 
 	public UserFactory() {}
 	

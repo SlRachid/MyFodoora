@@ -1,4 +1,5 @@
 package User;
+import java.io.*;
 import Food.*;
 import OrderAndDelivery.*;
 import System.*;
@@ -9,36 +10,39 @@ import java.util.ArrayList ;
  * This interface serves both customers and couriers:
  * For customers: It displays special offers for those who have opted in to receive them.
  * For couriers: It lists available orders for potential completion.
- * @param <ObsType>
+ * @param <Interest>
  */
 
-public class Interface <ObsType> implements java.io.Serializable{
+public class Interface <Interest> implements Serializable{
 
-    private static final long serialVersionUID = -3052025800155606005L;
     
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4098429983703670431L;
+	/**
      * The list of items to be displayed to the customer.
      */
-    private ArrayList<ObsType> obs; 
+    private ArrayList<Interest> target; 
     
     public Interface() {
-        obs = new ArrayList<ObsType>();
+        target = new ArrayList<Interest>();
     }
     
     /**
      * Adds a new item to the board.
-     * @param obs the item to be added.
+     * @param value the item to be added.
      */
-    public void addObs(ObsType obs){
-        this.obs.add(obs);
+    public void addObs(Interest value){
+        this.target.add(value);
     }
     
     /**
      * Removes an item from the board.
      * @param obs the item to be removed.
      */
-    public void removeObs(ObsType obs){
-        this.obs.remove(obs);
+    public void removeObs(Interest value){
+        this.target.remove(value);
     }
     
     /**
@@ -47,9 +51,9 @@ public class Interface <ObsType> implements java.io.Serializable{
      * @return the object with the specified ID.
      * @throws OrderNotFoundException if the object is not found.
      */
-    public ObsType findObsById (int uniqueID) throws OrderNotFoundException {
+    public Interest findObsById (int uniqueID) throws OrderNotFoundException {
         
-        for (ObsType object : obs){
+        for (Interest object : target){
             if((object instanceof Order)&&(((Order)object).getUniqueID()==(uniqueID))){
                 return object;
             }
@@ -61,7 +65,7 @@ public class Interface <ObsType> implements java.io.Serializable{
      * Clears all items from the board.
      */
     public void clearBoard(){
-        this.obs.clear();
+        this.target.clear();
     }
     
     /**
@@ -71,7 +75,7 @@ public class Interface <ObsType> implements java.io.Serializable{
     @Override
     public String toString(){
         String message = "Board:\n";
-        for(ObsType obs : this.obs){
+        for(Interest obs : this.target){
             message += obs + "\n";
         }
         return message;

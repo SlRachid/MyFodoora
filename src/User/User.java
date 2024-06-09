@@ -5,7 +5,10 @@ import System.*;
 
 public abstract class User implements java.io.Serializable {
 	
-	private static final long serialVersionUID = 6262632605692759298L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3980515071343254806L;
 	private String name ;
 	private String surname ;
 	private int ID ;

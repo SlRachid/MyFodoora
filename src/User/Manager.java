@@ -7,7 +7,10 @@ import java.util.Calendar;
 
 public class Manager extends User {
 	
-	private static final long serialVersionUID = 2291793873364057722L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2654735395946313337L;
 	/**
 	 * the MyFoodora core
 	 */

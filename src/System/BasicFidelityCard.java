@@ -5,7 +5,11 @@ import User.*;
 
 public class BasicFidelityCard extends FidelityCard {
 
-	private static final long serialVersionUID = -9008565060563275028L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7623597496037120413L;
 
 	public BasicFidelityCard() {
 		this.type = "basic" ;

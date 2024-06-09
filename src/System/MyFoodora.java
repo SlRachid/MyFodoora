@@ -54,7 +54,7 @@ public class MyFoodora implements java.io.Serializable{
 		super();
 		this.users = new ArrayList<User>();
 		//we add the CEO
-		users.add(new Manager("","","ceo","123456789",this));
+		users.add(new Manager("Rachid","Massine","ceo","123456789",this));
 		
 		this.completedOrders = new ArrayList<Order>();
 		this.serviceFee = serviceFee;

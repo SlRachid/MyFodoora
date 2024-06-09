@@ -7,101 +7,128 @@ import OrderAndDelivery.*;
 
 public class MyFoodoraExample {
 	/**
-	 * creates an example of My Foodora which will be saved in "MyFoodora.ser"
+	 * Generates an instance of MyFoodora which will be saved in "MyFoodora.ser"
 	 * this example is later used in the JUnit tests
 	 */
 	public static void createMyFoodora() {
-		//we create an empty myFoodora
+		//Create an empty myFoodora
 		double serviceFee = 10;
 		double markupPercentage = 0.05;
 		double deliveryCost = 5;
 		MyFoodora myFoodora = new MyFoodora(serviceFee, markupPercentage, deliveryCost);
 		
-		//we add the first manager
-		Manager manager = new Manager("Gael", "Colas", "gcolas", "123456789", myFoodora);
+		// Add the first manager
+		Manager manager = new Manager("Massine", "EL KHADER", "Mek", "qwerty", myFoodora);
 		myFoodora.addUser(manager);
 		
-		//we create a first restaurant : the HOKI
-		Restaurant hoki = new Restaurant("Le Hoki", "hoki", "password", new Location(12.3, 478.21));
-		Menu menu = hoki.getMenu();
-		//we add dishes and meals to the menu
-		Starter starter = new Starter("soupe", 2.5, DietType.vegetarian); menu.addDish(starter);
-
-		MainDish mainDish = new MainDish("maki thon", 4.5, DietType.standard);	menu.addDish(mainDish);
-		mainDish = new MainDish("california maki", 16.5, DietType.standard); menu.addDish(mainDish);
-		mainDish = new MainDish("maki saumon", 4, DietType.standard); menu.addDish(mainDish);
+		// Create a first restaurant
+		Restaurant foPizza = new Restaurant("Fo", "fo_pizza", "123", new Location(12.3, 478.21));
+		Menu menu = foPizza.getMenu();
 		
-		HalfMeal halfMeal = new HalfMeal("M2", mainDish, starter); menu.addMeal(halfMeal);		//we set the meal of the day
+		// Add dishes and meals to the menu
+		Starter starter = new Starter("Pizza norvegienne", 12.95, DietType.standard); menu.addDish(starter);
+
+		MainDish mainDish = new MainDish("Veggie pizza", 11, DietType.vegetarian);	menu.addDish(mainDish);
+		mainDish = new MainDish("Margherita pizza", 10, DietType.vegetarian); menu.addDish(mainDish);
+		mainDish = new MainDish("Pepperoni pizza", 13, DietType.standard); menu.addDish(mainDish);
+		
+		HalfMeal halfMeal = new HalfMeal("Special Pizza Combo", mainDish, starter); menu.addMeal(halfMeal);
 		menu.setMealOfTheWeek(halfMeal);
 		
-		mainDish = new MainDish("maki cheese", 3.5, DietType.vegetarian); menu.addDish(mainDish);
-		Dessert dessert = new Dessert("litchee", 4, DietType.vegetarian);	menu.addDish(dessert);
-		FullMeal fullMeal = new FullMeal("M3", mainDish, starter, dessert); menu.addMeal(fullMeal);
+		mainDish = new MainDish("Cheesy Garlic Bread", 5.5, DietType.standard); 
+		menu.addDish(mainDish);
 
-		mainDish = new MainDish("brochettes boeuf", 10.5, DietType.standard); menu.addDish(mainDish);
-		halfMeal = new HalfMeal("B1", mainDish, dessert); menu.addMeal(halfMeal);
+		Dessert dessert = new Dessert("Tiramisu", 4, DietType.standard);	
+		menu.addDish(dessert);
 
-		//we add the hoki to myFoodora
-		myFoodora.addUser(hoki);
-		
-		//we create a second restaurant : the DOMINOS
-		Restaurant dominos = new Restaurant("Dominos", "domi", "password", new Location(121.3, 41.31));
-		menu = dominos.getMenu();
-		//we add dishes and meals to the menu
-		starter = new Starter("cheesy bread", 2.5, DietType.vegetarian); menu.addDish(starter);
-		dessert = new Dessert("tiramisu", 4.5, DietType.vegetarian);	menu.addDish(dessert);
+		FullMeal fullMeal = new FullMeal("Family Pizza Feast", mainDish, starter, dessert); 
+		menu.addMeal(fullMeal);
 
-		mainDish = new MainDish("orientale", 13.5, DietType.standard);	menu.addDish(mainDish);
-		
-		halfMeal = new HalfMeal("duo", mainDish, starter); menu.addMeal(halfMeal);
-		
-		mainDish = new MainDish("4 fromages", 12.5, DietType.standard);	menu.addDish(mainDish);
-		mainDish = new MainDish("margherita", 10, DietType.standard);	menu.addDish(mainDish);
-		mainDish = new MainDish("cannibale", 13, DietType.standard);	menu.addDish(mainDish);
+		mainDish = new MainDish("Meat Lover's Pizza", 15, DietType.standard); 
+		menu.addDish(mainDish);
 
-		fullMeal = new FullMeal("family", mainDish, starter, dessert); menu.addMeal(fullMeal);
+		halfMeal = new HalfMeal("Pizza and Salad Combo", mainDish, dessert); 
+		menu.addMeal(halfMeal);
+		
+		// Add the restaurant to myFoodora
+		myFoodora.addUser(foPizza);
+		
+		// Create a second restaurant: Sushi Delight
+		Restaurant sushiDelight = new Restaurant("Sushi Delight", "sushi", "sushi_pass", new Location(121.3, 41.31));
+		menu = sushiDelight.getMenu();
+		// Add dishes and meals to the menu
+		starter = new Starter("Edamame", 3.5, DietType.vegetarian); 
+		menu.addDish(starter);
 
-		mainDish = new MainDish("california maki", 16.5, DietType.standard); menu.addDish(mainDish);
-		mainDish = new MainDish("maki saumon", 4, DietType.standard); menu.addDish(mainDish);
-	
-		//we add the dominos to myFoodora
-		myFoodora.addUser(dominos);
+		dessert = new Dessert("Green Tea Ice Cream", 5, DietType.vegetarian);	
+		menu.addDish(dessert);
+
+		mainDish = new MainDish("Sushi Platter", 18, DietType.standard);	
+		menu.addDish(mainDish);
+
+		halfMeal = new HalfMeal("Sushi Roll Combo", mainDish, starter); 
+		menu.addMeal(halfMeal);
+
+		mainDish = new MainDish("Sashimi Bowl", 20, DietType.standard);	
+		menu.addDish(mainDish);
+
+		fullMeal = new FullMeal("Deluxe Sushi Feast", mainDish, starter, dessert); 
+		menu.addMeal(fullMeal);
+
+		mainDish = new MainDish("Tempura Udon", 15, DietType.standard); 
+		menu.addDish(mainDish);
+
+		halfMeal = new HalfMeal("Nigiri and Miso Soup Combo", mainDish, dessert); 
+		menu.addMeal(halfMeal);
+
+		// Add Sushi Delight to MyFoodora
+		myFoodora.addUser(sushiDelight);
+
 		
-		//we adds manager
-		myFoodora.addUser(new Manager("Sylvestre", "Prabakaran", "prabakarans", "birthdaydate", myFoodora));
+		//Add a manager
+		myFoodora.addUser(new Manager("Rachid", "SLIMANI", "RS", "azerty", myFoodora));
 		
-		//we add couriers
-		Courier courier = new Courier("Peter", "Parker", "spiderman", "password", new Location(1.23, 854.1), "0651964987"); 
-		for (int i=0 ; i<23; i++){
-			courier.increaseCounter();
+		//Add couriers
+		Courier courier = new Courier("John", "Doe", "johndoe", "password", new Location(35.789, 78.65), "0634567890"); 
+		for (int i = 0; i < 50; i++) {
+		    courier.increaseCounter();
 		}
 		courier.setOnDuty(true);
 		myFoodora.addUser(courier);
-		
-		courier = new Courier("Spider", "Man", "peterparker", "motdepasse", new Location(1.23, 854.1), "0651964988");
-		for (int i=0; i<7; i++){
-			courier.increaseCounter();
+
+		courier = new Courier("Jane", "Smith", "janesmith", "pass123", new Location(40.7128, 74.0060), "0987654321");
+		for (int i = 0; i < 11; i++) {
+		    courier.increaseCounter();
 		}
 		courier.setOnDuty(true);
 		myFoodora.addUser(courier);
 
-		myFoodora.addUser(new Courier("Toby", "McGuire", "tobmac", "azerty", new Location(12.3, 5.18), "0651964989"));
+		myFoodora.addUser(new Courier("Michael", "Johnson", "mikejohn", "mypass", new Location(51.5074, 0.1278), "0112223333"));
 		
-		//we add customers
-		Customer customer = new Customer("Xavier", "Collar", "chaperouge", "qsdfghjkl", new Location(23.3, 45.12), "xavier.collar@myecp.fr", "0786822354");
+		//Add customers
+		Customer customer = new Customer("Ali", "Garfield", "AG", "password1", new Location(23.3, 45.12), "ali.garfield@student-cs.fr", "0712035618");
 		
-		//we give this customer fidelity points
+		//Fidelity points for Ali
 		customer.registerFidelityCard("point");
 		((PointFidelityCard)customer.getFidelityCard()).addPoints(123);
 		
+		// Add customer 1
 		myFoodora.addUser(customer);
-		myFoodora.addUser(new Customer("Regis", "Troissant", "cptcroche", "hfekljkfemvc", new Location(87.3, 12.5), "regis.troissant@myecp.fr", "0786822355"));
-		myFoodora.addUser(new Customer("Baptiste", "Turpin", "alladin", "ieupri", new Location(2.3, 4.12), "baptiste.turpin@myecp.fr", "0786822356"));
-		myFoodora.addUser(new Customer("Kevin", "Uzan", "PJ", "fpzkfpzof", new Location(69.2, 12.78), "kevin.uzan@myecp.fr", "0786822354"));
-		myFoodora.addUser(new Customer("Theo", "Bob", "theo7794", "password", new Location(84.3, 145.12), "theo.bob@gmail.com", "0786822354"));
+
+		// Add customer 2
+		myFoodora.addUser(new Customer("Alice", "Johnson", "alicej", "pass123", new Location(87.3, 12.5), "alice.johnson@example.com", "0743628121"));
+
+		// Add customer 3
+		myFoodora.addUser(new Customer("Bob", "Smith", "bobsmith", "secret321", new Location(2.3, 4.12), "bob.smith@example.com", "0743628131"));
+
+		// Add customer 4
+		myFoodora.addUser(new Customer("Emily", "Jones", "emilyj", "mypassword", new Location(69.2, 12.78), "emily.jones@example.com", "0753628181"));
+
+		// Add customer 5
+		myFoodora.addUser(new Customer("Sara", "Jamil", "saraj", "password456", new Location(84.3, 145.12), "sara.jamil@example.com", "0759628121"));
 		
 		//we create an order
-		Order order = new Order("Massine", customer, new Location(7.0,3.0), hoki);
+		Order order = new Order("AliOrder",customer,new Location(4,8), foPizza);
 		//we fill the order with food items
 		order.addDish(mainDish);
 		order.addMeal(fullMeal);

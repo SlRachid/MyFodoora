@@ -7,7 +7,10 @@ import java.io.Serializable ;
 
 public class TargetProfitPolicyDeliveryCost implements TargetProfitPolicy,Serializable {
 
-	private static final long serialVersionUID = -2989185117239530433L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7262233904061450480L;
 
 	/**
 	 * Sets the delivery cost

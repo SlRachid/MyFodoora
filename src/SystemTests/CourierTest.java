@@ -30,15 +30,15 @@ public class CourierTest {
 	public static void importMyFoodora(){
 		myFoodora = MyFoodora.loadMyFoodora();
 		try{
-			restaurant = (Restaurant) myFoodora.login("hoki", "password");
-			customer = (Customer) myFoodora.login("chaperouge", "qsdfghjkl");
+			restaurant = (Restaurant) myFoodora.login("fo_pizza", "123");
+			customer = (Customer) myFoodora.login("AG", "password1");
 			
 			//we create an order
-			order = new Order("Rachid",customer,new Location(1.0,2.0) , restaurant);
+			order = new Order("Ali",customer,new Location(1.0,2.0) , restaurant);
 			//we fill the order with food items
-			Dish dish = restaurant.findDishByName("brochettes boeuf");
+			Dish dish = restaurant.findDishByName("Veggie pizza");
 			order.addDish(dish);
-			Meal meal = restaurant.findMealByName("M3");
+			Meal meal = restaurant.findMealByName("Family Pizza Feast");
 			order.addMeal(meal);
 			//the customer submit the order
 			order.submit(true, myFoodora);
@@ -49,10 +49,10 @@ public class CourierTest {
 
 	@Test
 	public void testGetBoard() {
-		Interface board = courier.getBoard() ;
+		Interface interfaceBoard = courier.getInterfaceBoard() ;
 		
 		//we check that the order is on the board
-		System.out.println(board);
+		System.out.println(interfaceBoard);
 		System.out.println(courier);
 	}
 	
@@ -63,7 +63,7 @@ public class CourierTest {
 		int previousCounter = courier.getNumOfDeliveries();
 				
 		//the courier gets the call on his board : order of uniqueID 0
-		Interface<Order> board = courier.getBoard();
+		Interface<Order> board = courier.getInterfaceBoard();
 		Order order = board.findObsById(1);
 		
 		//the courier accept the delivery call
@@ -83,7 +83,7 @@ public class CourierTest {
 		int previousCounter = courier.getNumOfDeliveries();
 				
 		//the courier gets the call on his board : order of uniqueID 0
-		Interface<Order> board = courier.getBoard();
+		Interface<Order> board = courier.getInterfaceBoard();
 		Order order = board.findObsById(1);
 		
 		//the courier refuse the delivery call

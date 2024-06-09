@@ -22,81 +22,84 @@ public class RestaurantTest {
 	public static void importMyFoodora(){
 		myFoodora = MyFoodora.loadMyFoodora();
 		try{
-			restaurant = (Restaurant) myFoodora.login("hoki", "password");
+			restaurant = (Restaurant) myFoodora.login("sushi", "sushi_pass");
 		}catch(Exception e){}
 	}
 	
 	@Test
 	public void testFindDishByNameWhenInMenu() throws ItemNotFoundException {
-		restaurant.addDish(DishType.main, "maki crevette", 4.5, DietType.standard);
-		//when the user misspells a word for example : "crevette" != "crevete"
-		Dish dish = restaurant.findDishByName("maki crevette");
-		assertEquals("maki crevette", dish.getName());
+		//restaurant.addDish(DishType.main, "Tajine", 15, DietType.standard);
+		Dish dish = restaurant.findDishByName("Sushi Platter");
+		assertEquals("Sushi Platter", dish.getName());
 	}
 	
 	@Test (expected = ItemNotFoundException.class)
 	public void testFindDishByNameWhenNotInMenu() throws ItemNotFoundException {
-		restaurant.addDish(DishType.main, "maki crevette", 4.5, DietType.standard);
-		//when the user misspells a word for example : "crevette" != "crevete"
-		Dish dish = restaurant.findDishByName("maki crevete");
+		restaurant.addDish(DishType.main, "Tajine", 15, DietType.standard);
+		//"Tajine" != "Tajin" it should throw an error
+		Dish dish = restaurant.findDishByName("Tajin");
 	}
 
 	@Test
 	public void testAddDish() throws ItemNotFoundException {
-		restaurant.addDish(DishType.main, "maki avocat", 4.5, DietType.vegetarian);
-		Dish dish = restaurant.findDishByName("maki avocat");
-		System.out.println("The new added dish : " + dish);
+		restaurant.addDish(DishType.main, "Tajine", 15, DietType.standard);
+		Dish dish = restaurant.findDishByName("Tajine");
+		System.out.println(dish);
 	}
 
 	@Test (expected = ItemNotFoundException.class)
 	public void testRemoveDish() throws ItemNotFoundException {
 		//we add a new dish to the menu of the restaurant (tested above)
-		restaurant.addDish(DishType.main, "maki daurade", 4.5, DietType.standard);
-		Dish dish = restaurant.findDishByName("maki daurade");
+		restaurant.addDish(DishType.main, "Taine", 15, DietType.standard);
 		//we remove this dish
-		restaurant.removeDish("maki daurade");
+		restaurant.removeDish("Taine");
 		//we check that the dish has been removed
-		dish = restaurant.findDishByName("maki daurade");
+		Dish dish = restaurant.findDishByName("Taine");
 	}
 
 	@Test (expected = ItemNotFoundException.class)
 	public void testFindMealByName() throws ItemNotFoundException {
-		restaurant.addMeal("full", "B2");
+		restaurant.addMeal("full", "Rfissa marocaine");
 		//when the user misspells a word for example : "B2" != "b2"
-		Meal meal = restaurant.findMealByName("b2");
+		Meal meal = restaurant.findMealByName("Rissa");
 	}
 
 	@Test
 	public void testAddMeal() throws ItemNotFoundException {
-		restaurant.addMeal("full", "B2");
-		Meal meal = restaurant.findMealByName("B2");
-		System.out.println("The new added meal" + meal);
+		restaurant.addMeal("full", "Rfissa");
+		Meal meal = restaurant.findMealByName("Rfissa");
+		System.out.println(meal);
 	}
 
 	@Test (expected = ItemNotFoundException.class)
 	public void testRemoveMeal() throws ItemNotFoundException {
 		//we add a new meal to the menu of the restaurant (tested above)
-		restaurant.addMeal("full", "B7");
-		Meal meal = restaurant.findMealByName("B7");
+		restaurant.addMeal("full", "1");
+		Meal meal = restaurant.findMealByName("1");
 		//we remove this meal
-		restaurant.removeMeal("B7");
+		restaurant.removeMeal("1");
 		//we check that the dish has been removed
-		meal = restaurant.findMealByName("B7");
+		meal = restaurant.findMealByName("1");
 	}
 
 	@Test
 	public void testAddDish2Meal() throws ItemNotFoundException, MeallsCompleteException {
 		//we add a new meal to the menu of the restaurant (tested above)
-		restaurant.addMeal("half", "B2");
-		Meal meal = restaurant.findMealByName("B2");
+		restaurant.addMeal("half", "12");
+		Meal meal = restaurant.findMealByName("12");
+		//System.out.println(restaurant.getMenu());
 		//we find dishes to add to the meal
-		Dish mainDish = restaurant.findDishByName("brochettes boeuf"); 
-		Dish dessert = restaurant.findDishByName("litchee");
+		Dish mainDish = restaurant.findDishByName("Sushi Platter");
+		System.out.println(mainDish);
+
+		Dish dessert = restaurant.findDishByName("Green Tea Ice Cream");
+		System.out.println(dessert);
+
 		//we add them to the empty meal
-		restaurant.addDish2Meal("B2", "brochettes boeuf");
-		restaurant.addDish2Meal("B2", "litchee");
+		restaurant.addDish2Meal("12", "Sushi Platter");
+		restaurant.addDish2Meal("12", "Green Tea Ice Cream");
 		
-		System.out.println("The new adde half-meal " + meal);
+		System.out.println(meal);
 	}
 
 	@Test
