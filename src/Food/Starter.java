@@ -10,7 +10,7 @@ public class Starter extends Dish {
 
 	public Starter(String name, double price, DietType type) {
 		super(name, price, type);
-		this.setDishType(DishType.main) ;
+		this.setDishType(DishType.starter) ;
 	}
 	
 	@Override

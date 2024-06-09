@@ -579,17 +579,8 @@ public class MyFoodoraClient {
 				st.nextToken("\"");
 				String customerPassword = st.nextToken("\"");
 				st.nextToken("\"");
-				String customerXString = st.nextToken("\",");
-				double customerX = 0;
-				String customerYString = st.nextToken(",\"");
-				double customerY = 0;
-				try{
-					customerX = Double.parseDouble(customerXString) ;
-					customerY = Double.parseDouble(customerYString) ;
-				}catch(NumberFormatException e){
-					System.err.println("The address parameter is invalid you must enter two coordinates (ex : \"1.25,1.45\").");
-					error = true ;
-				}
+				String customerEmail = st.nextToken("\",");
+		
 				if(st.hasMoreTokens()){	
 					System.err.println("The command \"registerCustomer <firstName> <lastName> <username> <password> <address>\" has only 5 parameters.");
 					error = true ;
@@ -597,7 +588,7 @@ public class MyFoodoraClient {
 				if(!error){
 					currentManager.addUser(UserType.customer, customerName, customerSurname, customerUserName, customerPassword);
 					try{
-						((Customer)currentManager.getMyFoodora().findUserByName(customerName)).setLocation(new Location(customerX,customerY));
+						((Customer)currentManager.getMyFoodora().findUserByName(customerName)).setEmail(customerEmail);
 						System.out.println("The customer has been registered. Here are its properties : ") ;
 						System.out.println(currentManager.getMyFoodora().findUserByName(customerName));
 					}catch(UserNotFoundException e){
@@ -659,9 +650,12 @@ public class MyFoodoraClient {
 					switch(deliveryPolicyName) {
 					case ("fastest"):
 						currentManager.getMyFoodora().setDeliveryPolicy(new FastestDeliveryPolicy());
+						System.out.println("The \" delivery policy has been set to fastest");
 						break;
 					case ("fairOccupation") :
 						currentManager.setDeliveryPolicy(new FairOccupationDeliveryPolicy());
+						System.out.println("The \" delivery policy has been set to faiOccupation");
+					
 						break;
 
 					}
@@ -745,7 +739,7 @@ public class MyFoodoraClient {
 				if(!error){
 					try{
 						User fidelUser = myFoodora.findUserByUsername(customerUsername);
-						if(fidelUser.getUserType().equals("customer")){
+						if(fidelUser.getUserType().equals(UserType.customer)){
 							Customer fidelCustomer = (Customer)fidelUser ;
 							fidelCustomer.registerFidelityCard(cardType);
 							System.out.println("The user of username \""+customerUsername+"\" has now a "+cardType+" fidelity card.");
@@ -795,7 +789,7 @@ public class MyFoodoraClient {
 					error = true ;
 				}
 				if(!error){
-					System.out.println("Here are the activated restaurants of the platform :");
+					System.out.println("Here are the best sellingrestaurants of the platform :");
 					Restaurant mostSellingRestaurant = new Restaurant("","","","") ;
 					ArrayList<Integer> activatedRestaurants = new ArrayList<Integer>() ;
 					while (mostSellingRestaurant!=null){
@@ -829,7 +823,7 @@ public class MyFoodoraClient {
 				if(!error){
 					System.out.println("Here are the activated customers of the platform :");
 					for (User user : myFoodora.getUsers()){
-						if((user.getUserType().equals("customer")&&(user.isActivated()))){
+						if((user.getUserType().equals(UserType.customer)&&(user.isActivated()))){
 							System.out.println(user);							
 						}
 					}
@@ -844,7 +838,7 @@ public class MyFoodoraClient {
 					error = true ;
 				}
 				try{
-					if(!myFoodora.findUserByName(restaurantName).getUserType().equals("restaurant")){
+					if(!myFoodora.findUserByName(restaurantName).getUserType().equals(UserType.restaurant)){
 						System.err.println("The user named \""+restaurantName+"\" is not a restaurant.");
 						error = true ;
 					}
@@ -994,6 +988,7 @@ public class MyFoodoraClient {
 						+ "\"addDish2Meal <dishName> <mealName>\" : adds a dish to a meal\n"
 						+ "\"showMeal <mealName>\" : displays the indicated meal\n"
 						+ "\"setSpecialOffer <mealName>\" : sets the meal of the week\n"
+						+ "\"removeSpecialOffer <mealName>\" : removes the meal of the week\n"
 						+ "\"showSortedMeals <> : displays all the meals w.r.t. the number of times they have been picked\n"
 						+ "\"showSortedDishes <> : displays all the dishes w.r.t. the number of times they have been picked\n"
 						+ "\"logout\" : log out\n");
@@ -1149,6 +1144,8 @@ public class MyFoodoraClient {
 					}
 				}
 				return "next" ;
+			case("removeSpecialOffer") :
+				currentRestaurant.removesMealOfTheWeek();
 			case("showSortedMeals"):
 				if(st.hasMoreTokens()){
 					System.err.println("The command \"showSortedMeals\" has only one parameter.");

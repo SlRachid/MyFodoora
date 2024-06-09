@@ -157,6 +157,10 @@ public class Restaurant extends User {
 		String offer = "At " + this.getName() + " the meal " + mealName + " is " + reduction + "% cheaper than usually !\n";
 		myFoodora.newOffer(offer);
 	}
+	public void removesMealOfTheWeek(){
+		Meal mealOfTheWeek = null;
+		this.getMenu().setMealOfTheWeek(mealOfTheWeek);
+	}
 	
 	/**
 	 * display the food items of the menu according to the shipped order policy

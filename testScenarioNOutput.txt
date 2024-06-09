@@ -5,330 +5,500 @@ You have successfully logged in the system !
 
 Welcome Rachid
 Type "help" to have a list of all available commands.
+The restaurant has been registered. Here are its properties : 
+Name : Gourmet Delight
+	Address [x = 3.0, y = 4.0]
 Type "help" to have a list of all available commands.
+The restaurant has been registered. Here are its properties : 
+Name : Pizza Palace
+	Address [x = -3.0, y = 2.0]
 Type "help" to have a list of all available commands.
+The restaurant has been registered. Here are its properties : 
+Name : Sari3
+	Address [x = 3.0, y = 9.0]
 Type "help" to have a list of all available commands.
+The restaurant has been registered. Here are its properties : 
+Name : Lbari3
+	Address [x = 9.0, y = 8.0]
 Type "help" to have a list of all available commands.
+The restaurant has been registered. Here are its properties : 
+Name : Lfari3
+	Address [x = 4.0, y = 3.0]
 Type "help" to have a list of all available commands.
+The customer has been registered. Here are its properties : 
+customer ID n�18 Moghit Yebari username:my
+
 Type "help" to have a list of all available commands.
+The customer has been registered. Here are its properties : 
+customer ID n�19 Jah Doe username:john_doe
+
 Type "help" to have a list of all available commands.
+The customer has been registered. Here are its properties : 
+customer ID n�20 Jae Smith username:jane_smith
+
 Type "help" to have a list of all available commands.
+The customer has been registered. Here are its properties : 
+customer ID n�21 Ace Johnson username:alice_j
+
 Type "help" to have a list of all available commands.
+The customer has been registered. Here are its properties : 
+customer ID n�22 Bb Brown username:bob_b
+
 Type "help" to have a list of all available commands.
+The customer has been registered. Here are its properties : 
+customer ID n�23 Chlie Williams username:charlie_w
+
 Type "help" to have a list of all available commands.
-Type "help" to have a list of all available commands.
-Type "help" to have a list of all available commands.
-Type "help" to have a list of all available commands.
-Type "help" to have a list of all available commands.
-The courier has been registered. Here are its properties : 
-courier ID n�13 Kobe Bryant username:kb24
+The customer has been registered. Here are its properties : 
+customer ID n�24 Did Jones username:david_j
 
 Type "help" to have a list of all available commands.
 The courier has been registered. Here are its properties : 
-courier ID n�14 Tim Duncan username:td21
+courier ID n�25 Koe Bryant username:kb24
 
 Type "help" to have a list of all available commands.
+The courier has been registered. Here are its properties : 
+courier ID n�26 Tm Duncan username:td21
+
 Type "help" to have a list of all available commands.
-Here are the activated restaurants of the platform :
+Here are the best sellingrestaurants of the platform :
 Name : Fo
 	Address [x = 12.3, y = 478.21]
 Type "help" to have a list of all available commands.
 Here are the activated customers of the platform :
+customer ID n�8 Ali Garfield username:AG
+
+customer ID n�9 Alice Johnson username:alicej
+
+customer ID n�10 Bob Smith username:bobsmith
+
+customer ID n�11 Emily Jones username:emilyj
+
+customer ID n�12 Sara Jamil username:saraj
+
+customer ID n�13 Paolo Ballarini username:professor
+
+customer ID n�13 Paolo Ballarini username:professor
+
+customer ID n�18 Moghit Yebari username:my
+
+customer ID n�19 Jah Doe username:john_doe
+
+customer ID n�20 Jae Smith username:jane_smith
+
+customer ID n�21 Ace Johnson username:alice_j
+
+customer ID n�22 Bb Brown username:bob_b
+
+customer ID n�23 Chlie Williams username:charlie_w
+
+customer ID n�24 Did Jones username:david_j
+
 Type "help" to have a list of all available commands.
+The " delivery policy has been set to fastest
 Type "help" to have a list of all available commands.
+The user of username "my" has now a lottery fidelity card.
 Type "help" to have a list of all available commands.
 You have logged out.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
+You have successfully logged in the system !
 
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
+Welcome Gourmet Delight
+Type "help" to have a list of all available commands.
+The glutenFree starter Bruschetta has been added to your menu for 5.0 euros.
+Type "help" to have a list of all available commands.
+The standard mainDish Lasagna has been added to your menu for 9.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian dessert Tiramisu has been added to your menu for 4.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian dessert Flan has been added to your menu for 6.0 euros.
+Type "help" to have a list of all available commands.
+The full Italian Feast has been created and added to your menu.
+Type "help" to have a list of all available commands.
+Here is the updated meal
 
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
+FullMeal: Italian Feast
+Price: 4,75
+Type: standard
+Main Dish: nullStarter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
 
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
+FullMeal: Italian Feast
+Price: 13,30
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
 
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
+FullMeal: Italian Feast
+Price: 17,10
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
 
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
+Type "help" to have a list of all available commands.
+Here is the new meal of the week :
 
+FullMeal: Italian Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the Italian Feast :
+
+FullMeal: Italian Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+You have logged out.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Did
+Type "help" to have a list of all available commands.
+You have logged out.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Pizza Palace
+Type "help" to have a list of all available commands.
+The vegetarian starter Garlic Bread has been added to your menu for 3.0 euros.
+Type "help" to have a list of all available commands.
+The standard mainDish Pepperoni Pizza has been added to your menu for 10.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian dessert Chocolate Brownie has been added to your menu for 4.0 euros.
+Type "help" to have a list of all available commands.
+The standard mainDish pizza norway has been added to your menu for 12.0 euros.
+Type "help" to have a list of all available commands.
+The half Pizza Extravaganza has been created and added to your menu.
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+HalfMeal: Pizza Extravaganza
+Price: 2,85
+Type: standard
+Main Dish: nullStarter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+HalfMeal: Pizza Extravaganza
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the new meal of the week :
+
+HalfMeal: Pizza Extravaganza
+Price: 11,70
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+The full Pizza Extravaganza XL has been created and added to your menu.
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Pizza Extravaganza XL
+Price: 2,85
+Type: standard
+Main Dish: nullStarter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Pizza Extravaganza XL
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Pizza Extravaganza XL
+Price: 16,15
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+Dessert : [Chocolate Brownie, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the new meal of the week :
+
+FullMeal: Pizza Extravaganza XL
+Price: 15,30
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+Dessert : [Chocolate Brownie, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+[
+HalfMeal: Pizza Extravaganza
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+, 
+FullMeal: Pizza Extravaganza XL
+Price: 16,15
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+Dessert : [Chocolate Brownie, price=4.0, type=vegetarian, counter=0]
+]
+Type "help" to have a list of all available commands.
+You have logged out.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Sari3
+Type "help" to have a list of all available commands.
+The glutenFree starter Sushi has been added to your menu for 5.0 euros.
+Type "help" to have a list of all available commands.
+The standard mainDish Sashimi has been added to your menu for 9.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian dessert Mochi has been added to your menu for 4.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian starter Miso Soup has been added to your menu for 6.0 euros.
+Type "help" to have a list of all available commands.
+The full Japanese Feast has been created and added to your menu.
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Japanese Feast
+Price: 4,75
+Type: standard
+Main Dish: nullStarter : [Sushi, price=5.0, type=glutenFree, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Japanese Feast
+Price: 13,30
+Type: standard
+Main Dish: MainDish : [Sashimi, price=9.0, type=standard, counter=0]
+Starter : [Sushi, price=5.0, type=glutenFree, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Japanese Feast
+Price: 17,10
+Type: standard
+Main Dish: MainDish : [Sashimi, price=9.0, type=standard, counter=0]
+Starter : [Sushi, price=5.0, type=glutenFree, counter=0]
+Dessert : [Mochi, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the new meal of the week :
+
+FullMeal: Japanese Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Sashimi, price=9.0, type=standard, counter=0]
+Starter : [Sushi, price=5.0, type=glutenFree, counter=0]
+Dessert : [Mochi, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the Japanese Feast :
+
+FullMeal: Japanese Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Sashimi, price=9.0, type=standard, counter=0]
+Starter : [Sushi, price=5.0, type=glutenFree, counter=0]
+Dessert : [Mochi, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+You have logged out.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Lbari3
+Type "help" to have a list of all available commands.
+The vegetarian starter Hummus has been added to your menu for 3.0 euros.
+Type "help" to have a list of all available commands.
+The standard mainDish Shawarma has been added to your menu for 10.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian dessert Baklava has been added to your menu for 4.0 euros.
+Type "help" to have a list of all available commands.
+The standard mainDish Falafel has been added to your menu for 12.0 euros.
+Type "help" to have a list of all available commands.
+The half Middle Eastern Feast has been created and added to your menu.
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+HalfMeal: Middle Eastern Feast
+Price: 2,85
+Type: standard
+Main Dish: nullStarter : [Hummus, price=3.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+HalfMeal: Middle Eastern Feast
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the new meal of the week :
+
+HalfMeal: Middle Eastern Feast
+Price: 11,70
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+The full Middle Eastern Feast XL has been created and added to your menu.
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Middle Eastern Feast XL
+Price: 2,85
+Type: standard
+Main Dish: nullStarter : [Hummus, price=3.0, type=vegetarian, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Middle Eastern Feast XL
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Middle Eastern Feast XL
+Price: 16,15
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the new meal of the week :
+
+FullMeal: Middle Eastern Feast XL
+Price: 15,30
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+[
+HalfMeal: Middle Eastern Feast
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+, 
+FullMeal: Middle Eastern Feast XL
+Price: 16,15
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+]
+Type "help" to have a list of all available commands.
+You have logged out.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
+You have successfully logged in the system !
+
+Welcome Lfari3
+Type "help" to have a list of all available commands.
+The vegetarian starter Tajine has been added to your menu for 5.0 euros.
+Type "help" to have a list of all available commands.
+The standard mainDish Couscous has been added to your menu for 9.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian dessert Baklava has been added to your menu for 4.0 euros.
+Type "help" to have a list of all available commands.
+The vegetarian dessert Mint Tea has been added to your menu for 6.0 euros.
+Type "help" to have a list of all available commands.
+The full Moroccan Feast has been created and added to your menu.
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Moroccan Feast
+Price: 4,75
+Type: standard
+Main Dish: nullStarter : [Tajine, price=5.0, type=vegetarian, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Moroccan Feast
+Price: 13,30
+Type: standard
+Main Dish: MainDish : [Couscous, price=9.0, type=standard, counter=0]
+Starter : [Tajine, price=5.0, type=vegetarian, counter=0]
+null
+Type "help" to have a list of all available commands.
+Here is the updated meal
+
+FullMeal: Moroccan Feast
+Price: 17,10
+Type: standard
+Main Dish: MainDish : [Couscous, price=9.0, type=standard, counter=0]
+Starter : [Tajine, price=5.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the new meal of the week :
+
+FullMeal: Moroccan Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Couscous, price=9.0, type=standard, counter=0]
+Starter : [Tajine, price=5.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+Here is the Moroccan Feast :
+
+FullMeal: Moroccan Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Couscous, price=9.0, type=standard, counter=0]
+Starter : [Tajine, price=5.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+
+Type "help" to have a list of all available commands.
+You have logged out.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
@@ -336,185 +506,190 @@ You have successfully logged in the system !
 
 Welcome Rachid
 Type "help" to have a list of all available commands.
+Here is the menu of the restaurant "Gourmet Delight" :
+Menu {
+  dishes=[Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+, MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+, Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
+, Dessert : [Flan, price=6.0, type=vegetarian, counter=0]
+],
+  meals=[
+FullMeal: Italian Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
+],
+  genericDiscountFactor=0.05,
+  specialDiscountFactor=0.1,
+  mealOfTheWeek=
+FullMeal: Italian Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
+
+}
 Type "help" to have a list of all available commands.
+Here is the menu of the restaurant "Pizza Palace" :
+Menu {
+  dishes=[Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+, MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+, Dessert : [Chocolate Brownie, price=4.0, type=vegetarian, counter=0]
+, MainDish : [pizza norway, price=12.0, type=standard, counter=0]
+],
+  meals=[
+HalfMeal: Pizza Extravaganza
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+, 
+FullMeal: Pizza Extravaganza XL
+Price: 16,15
+Type: standard
+Main Dish: MainDish : [Pepperoni Pizza, price=10.0, type=standard, counter=0]
+Starter : [Garlic Bread, price=3.0, type=vegetarian, counter=0]
+Dessert : [Chocolate Brownie, price=4.0, type=vegetarian, counter=0]
+],
+  genericDiscountFactor=0.05,
+  specialDiscountFactor=0.1,
+  mealOfTheWeek=null
+}
 Type "help" to have a list of all available commands.
+Here is the menu of the restaurant "Sari3" :
+Menu {
+  dishes=[Starter : [Sushi, price=5.0, type=glutenFree, counter=0]
+, MainDish : [Sashimi, price=9.0, type=standard, counter=0]
+, Dessert : [Mochi, price=4.0, type=vegetarian, counter=0]
+, Starter : [Miso Soup, price=6.0, type=vegetarian, counter=0]
+],
+  meals=[
+FullMeal: Japanese Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Sashimi, price=9.0, type=standard, counter=0]
+Starter : [Sushi, price=5.0, type=glutenFree, counter=0]
+Dessert : [Mochi, price=4.0, type=vegetarian, counter=0]
+],
+  genericDiscountFactor=0.05,
+  specialDiscountFactor=0.1,
+  mealOfTheWeek=
+FullMeal: Japanese Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Sashimi, price=9.0, type=standard, counter=0]
+Starter : [Sushi, price=5.0, type=glutenFree, counter=0]
+Dessert : [Mochi, price=4.0, type=vegetarian, counter=0]
+
+}
 Type "help" to have a list of all available commands.
+Here is the menu of the restaurant "Lbari3" :
+Menu {
+  dishes=[Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+, MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+, Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+, MainDish : [Falafel, price=12.0, type=standard, counter=0]
+],
+  meals=[
+HalfMeal: Middle Eastern Feast
+Price: 12,35
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+, 
+FullMeal: Middle Eastern Feast XL
+Price: 16,15
+Type: standard
+Main Dish: MainDish : [Shawarma, price=10.0, type=standard, counter=0]
+Starter : [Hummus, price=3.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+],
+  genericDiscountFactor=0.05,
+  specialDiscountFactor=0.1,
+  mealOfTheWeek=null
+}
 Type "help" to have a list of all available commands.
+Here is the menu of the restaurant "Lfari3" :
+Menu {
+  dishes=[Starter : [Tajine, price=5.0, type=vegetarian, counter=0]
+, MainDish : [Couscous, price=9.0, type=standard, counter=0]
+, Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+, Dessert : [Mint Tea, price=6.0, type=vegetarian, counter=0]
+],
+  meals=[
+FullMeal: Moroccan Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Couscous, price=9.0, type=standard, counter=0]
+Starter : [Tajine, price=5.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+],
+  genericDiscountFactor=0.05,
+  specialDiscountFactor=0.1,
+  mealOfTheWeek=
+FullMeal: Moroccan Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Couscous, price=9.0, type=standard, counter=0]
+Starter : [Tajine, price=5.0, type=vegetarian, counter=0]
+Dessert : [Baklava, price=4.0, type=vegetarian, counter=0]
+
+}
 Type "help" to have a list of all available commands.
+The customer has been registered. Here are its properties : 
+customer ID n�28 Emma Johnson username:emma_j
+
 Type "help" to have a list of all available commands.
+The courier has been registered. Here are its properties : 
+courier ID n�29 LeBron James username:LJ23
+
 Type "help" to have a list of all available commands.
-Type "help" to have a list of all available commands.
-Type "help" to have a list of all available commands.
+The restaurant has been registered. Here are its properties : 
+Name : Yummy Delights
+	Address [x = 2.0, y = 4.0]
 Type "help" to have a list of all available commands.
 You have logged out.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
-
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
-
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
-
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
-
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Sorry username or password incorrect
-Please try again 
-
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
 You have successfully logged in the system !
 
-Welcome Rachid
+Welcome Jah
 Type "help" to have a list of all available commands.
-The total profit since the creation is :
-5.210374999999999
-Type "help" to have a list of all available commands.
-The total profit during this period is :
-0.0
-Type "help" to have a list of all available commands.
-Type "help" to have a list of all available commands.
-Here are the activated couriers of the platform :
-courier ID n�5 John Doe username:johndoe
+You can start ordering now. Here is the menu :
+Menu {
+  dishes=[Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+, MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+, Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
+, Dessert : [Flan, price=6.0, type=vegetarian, counter=0]
+],
+  meals=[
+FullMeal: Italian Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
+],
+  genericDiscountFactor=0.05,
+  specialDiscountFactor=0.1,
+  mealOfTheWeek=
+FullMeal: Italian Feast
+Price: 16,20
+Type: standard
+Main Dish: MainDish : [Lasagna, price=9.0, type=standard, counter=0]
+Starter : [Bruschetta, price=5.0, type=glutenFree, counter=0]
+Dessert : [Tiramisu, price=4.0, type=vegetarian, counter=0]
 
-courier ID n�6 Jane Smith username:janesmith
-
+}
 Type "help" to have a list of all available commands.
-Here are the activated customers of the platform :
 Type "help" to have a list of all available commands.
-Here are the activated restaurants of the platform :
-Name : Fo
-	Address [x = 12.3, y = 478.21]
+Type "help" to have a list of all available commands.
 Type "help" to have a list of all available commands.
 You have logged out.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
-Please use "login <username> <password> ."
-Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
-Or type "help <>" to obtain the list of the available commands.
 Please use "login <username> <password> ."
 Or "registerCustomer <firstName> <lastName> <username> <password> <emailAddress>" if you're a new customer here.
 Or type "help <>" to obtain the list of the available commands.
