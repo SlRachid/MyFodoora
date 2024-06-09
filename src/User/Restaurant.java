@@ -11,12 +11,12 @@ public class Restaurant extends User {
 	private Location address ;
 	private Menu menu ;
 	private int counter = 0 ;
-	private FoodItemFactory foodItemFactory ;
+	private MenuItemFactory foodItemFactory ;
 	
 	/**
 	 * the policy to sort food items that have been shipped in completed orders
 	 */
-	private SorterFoodItem shippedOrderPolicy = new SorterCounter() ;
+	private SorterMenuItem shippedOrderPolicy = new SorterCounter() ;
 	
 	/**
 	 * creates a restaurant who will be used in the MyFoodora platform
@@ -29,7 +29,7 @@ public class Restaurant extends User {
 		super(name, "", userName, password);
 		this.address = null ;
 		this.menu = new Menu() ;
-		this.foodItemFactory = new FoodItemFactory();
+		this.foodItemFactory = new MenuItemFactory();
 		
 		this.setUserType (UserType.restaurant) ;
 	}
@@ -45,7 +45,7 @@ public class Restaurant extends User {
 		super(name, "", userName, password);
 		this.address = address ;
 		this.menu = new Menu() ;
-		this.foodItemFactory = new FoodItemFactory();
+		this.foodItemFactory = new MenuItemFactory();
 
 		this.setUserType (UserType.restaurant) ;
 	}
@@ -199,7 +199,7 @@ public class Restaurant extends User {
 		this.menu.setSpecialDiscountFactor(specialDiscountFactor);
 	}
 
-	public Location getAddress() {
+	public Location getLocation() {
 		return address;
 	}
 
@@ -215,12 +215,12 @@ public class Restaurant extends User {
 		this.counter++ ;
 	}
 	
-	public void setShippedOrderPolicy(SorterFoodItem shippedOrderPolicy) {
+	public void setShippedOrderPolicy(SorterMenuItem shippedOrderPolicy) {
 		this.shippedOrderPolicy = shippedOrderPolicy;
 	}
 
 	public void setShippedOrderPolicy (String shippedOrderPolicyName){
-		SorterFoodItem sorterFoodItem = null;
+		SorterMenuItem sorterFoodItem = null;
 		switch(shippedOrderPolicyName){
 			case("counter"):
 				sorterFoodItem = new SorterCounter();

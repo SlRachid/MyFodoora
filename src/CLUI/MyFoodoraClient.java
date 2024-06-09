@@ -2,8 +2,8 @@ package CLUI;
 import Food.*;
 import User.*;
 import OrderAndDelivery.*;
-import System.AccountDeactivatedException;
-import System.IdentificationIncorrectException;
+import System.NotActiveAccException;
+import System.IncorrectInformationException;
 import System.MyFoodora;
 
 import java.io.*;
@@ -28,14 +28,14 @@ public class MyFoodoraClient {
 		myFoodora.displayUsers();
 
 		sc = new Scanner(System.in);
-
+		System.out.println("*************************************************************************************************");
 		System.out.println("Welcome to our first java application \n");
 
 		String commande = "" ;
 		closeLoop :
-			while (!commande.equals("close")){	
-				System.out.println("Please use \"login <username> <password>\"\n"
-						+ "Or type \"help <>\" to obtain the list of the available commands");
+			while (!commande.equals("close")){
+				System.out.println("Please use \"login <username> <password> .\"\n" +"Or \"registerCustomer <firstName> <lastName> <username> <password> <address : X,Y>\" if you're a new customer here.\n" 
+						+ "Or type \"help <>\" to obtain the list of the available commands.");
 				input = sc.nextLine();
 				st = new StringTokenizer(input) ;
 				try{
@@ -55,17 +55,8 @@ public class MyFoodoraClient {
 					st.nextToken("\"");
 					String customerPassword = st.nextToken("\"");
 					st.nextToken("\"");
-					String customerXString = st.nextToken("\",");
-					double customerX = 0;
-					String customerYString = st.nextToken(",\"");
-					double customerY = 0;
-					try{
-						customerX = Double.parseDouble(customerXString) ;
-						customerY = Double.parseDouble(customerYString) ;
-					}catch(NumberFormatException e){
-						System.err.println("The address is invalid you must enter two coordinates  \"X,Y\"");
-						error = true ;
-					}
+					String customerEmail = st.nextToken("\",");
+
 					if(st.hasMoreTokens()){	
 						System.err.println("The command \"registerCustomer <firstName> <lastName> <username> <password> <address>\" has only 5 parameters.");
 						error = true ;
@@ -73,10 +64,10 @@ public class MyFoodoraClient {
 					if(!error){
 						myFoodora.getUserFactory().registerUser(UserType.customer, customerName, customerSurname, customerUserName, customerPassword,myFoodora);
 						try{
-							((Customer)myFoodora.findUserByName(customerName)).setAddress(new Location(customerX,customerY));
+							((Customer)myFoodora.findUserByName(customerName)).setEmail(customerEmail);
 							System.out.println("Your account is now created. You may login ") ;
 						}catch(UserNotFoundException e){
-							System.out.println("Error while creating the user.");
+							System.out.println("There was an error while creating your account.");
 						}
 					}
 					break ;
@@ -85,7 +76,7 @@ public class MyFoodoraClient {
 					String workReturn = "next" ;
 					if(userType!=null){
 						while(workReturn.equals("next")){
-							workReturn = work(userType);
+							workReturn = userInterface(userType);
 						}
 						if (workReturn.equals("logout")){
 							System.out.println("You have logged out.");
@@ -144,10 +135,10 @@ public class MyFoodoraClient {
 			userType = currentUser.getUserType();
 			System.out.println("You have successfully logged in the system !\n");
 			System.out.println("Welcome "+currentUser.getName());			
-		}catch(IdentificationIncorrectException e){
+		}catch(IncorrectInformationException e){
 			System.out.println("Sorry " + e.getMessage() + "\n"
 					+ "Please try again \n");
-		}catch(AccountDeactivatedException e){
+		}catch(NotActiveAccException e){
 			System.out.println("Sorry " + e.getMessage() + "\n"
 					+ "Your account has been deactivated : Please call a manager : +33 1 41 13 15 79 \n");
 		}catch(NoSuchElementException e){
@@ -160,19 +151,19 @@ public class MyFoodoraClient {
 	 * Let the user use the platform with the commands he can use.
 	 * @param userType
 	 */
-	private static String work(UserType userType){		
+	private static String userInterface(UserType userType){		
 		System.out.println("Type \"help\" to have a list of all available commands.");
 		input = sc.nextLine();
 		st = new StringTokenizer(input) ;
 		switch (userType){
 		case customer:
-			return workCustomer() ;
+			return customerInterface() ;
 		case courier:
-			return workCourier() ;
+			return courierInterface() ;
 		case restaurant:
-			return workRestaurant() ;
+			return restaurantInterface() ;
 		case manager:
-			return workManager() ;
+			return managerInterface() ;
 		default :
 			return null ;
 		}		
@@ -182,17 +173,20 @@ public class MyFoodoraClient {
 	 * Works with all the possible commands that a customer can use
 	 * @return "next" to go to the next command or "logout" if the customer wanted to logout.
 	 */
-	private static String workCustomer(){
+	private static String customerInterface(){
 		Customer currentCustomer = (Customer)currentUser ;
+		ArrayList<Order> currentOrders = new ArrayList<Order>();
 		String commande ;
+		String orderName;
+		Boolean orderFound = false;
 		boolean error = false ;
 		try{
 			commande = st.nextToken() ;
 			switch (commande){
 			case("help"):
-				System.out.println("\"createOrder <restaurantName>\" : create a new order\n"
-						+ "\"addItem2Order <itemName>\" : add a dish or a meal to the menu\n"
-						+ "\"endOrder <applyReduction> : submit the order to today's date and applies the order depending on the applyReduction value \"yes\" or \"no\"\n"
+				System.out.println("\"createOrder <restaurantName> <currentLocation> <orderName>\" : create a new order\n"
+						+ "\"addItem2Order <orderName> <MenuitemName> \" : add a dish or a meal to the menu\n"
+						+ "\"endOrder <applyReduction> <orderName>: submit the order to today's date and applies the order depending on the applyReduction value \"yes\" or \"no\"\n"
 						+ "\"registerFidelityCard <cardType>\" : associate a new fidelity card (\"basic\", \"point\" or \"lottery\")\n"
 						+ "\"displayFidelityInfo <>\" : displays the fidelity info\n"
 						+ "\"historyOfOrders <>\" : displays the history of orders\n"
@@ -201,10 +195,25 @@ public class MyFoodoraClient {
 			case("createOrder"):
 				st.nextToken("\"");
 				String restaurantName = st.nextToken("\"");
+				st.nextToken("\"");
+				String customerXString = st.nextToken("\",");
+				double customerX = 0;
+				String customerYString = st.nextToken(",\"");
+				double customerY = 0;
+				st.nextToken("\"");
+				orderName = st.nextToken("\"");
 				Restaurant orderedRestaurant = null ;
+				
+				try{
+					customerX = Double.parseDouble(customerXString) ;
+					customerY = Double.parseDouble(customerYString) ;
+				}catch(NumberFormatException e){
+					System.err.println("The address parameter is invalid you must enter two coordinates (ex : \"1.25,1.45\").");
+					error = true ;
+				}
 				try{
 					User orderedUser = myFoodora.findUserByName(restaurantName) ;
-					if(orderedUser.getUserType().equals("restaurant")){
+					if(orderedUser.getUserType().equals(UserType.restaurant)){
 						orderedRestaurant = (Restaurant)orderedUser ;
 					}else{
 						System.err.println("The restaurant \""+restaurantName+"\" does not exist.");
@@ -219,20 +228,34 @@ public class MyFoodoraClient {
 					error = true ;
 				}
 				if(!error){
-					currentOrder = new Order(currentCustomer,orderedRestaurant);
-					System.out.println("A new order has been created. Here is the restaurant's menu :");
+					currentOrder = new Order(orderName, currentCustomer, new Location(customerX,customerY), orderedRestaurant);
+					currentOrders.add(currentOrder);
+					System.out.println("You can start ordering now. Here is the menu :");
 					currentOrder.getRestaurant().displayMenu();
 				}
 				return "next" ;
 			case("addItem2Order"):
 				st.nextToken("\"");
+				orderName = st.nextToken("\"");
+				st.nextToken("\"");
 				String itemName = st.nextToken("\"");
+				for (Order o : currentOrders) {
+					if(o.getName()== orderName) {
+						currentOrder = o;
+						orderFound = true;
+					}
+				}
+				
+				if(!orderFound) {
+					System.err.println("Order corresponding to " + orderName + " was not found");
+					error = true ;
+				}
 				if(st.hasMoreTokens()){
-					System.err.println("Invalid number of parameters or syntax error.");
+					System.err.println("Syntax error, try : \"addItem2Order <orderName> <MenuItemName> .");
 					error = true ;
 				}
 				if(currentOrder==null){
-					System.err.println("You have not created any order.");
+					System.err.println("You have to create an order first to add items to it.");
 					error = true ;
 					return "next" ;
 				}
@@ -269,12 +292,24 @@ public class MyFoodoraClient {
 						System.out.println("The meal \""+itemName+"\" has been added to your order.");
 						break ;
 					}
-					System.out.println("The actual price of your order is "+currentOrder.computePrice());
 				}
 				return "next" ;
 			case("endOrder"):
 				st.nextToken("\"");
 				String applyReduction = st.nextToken("\"");
+				st.nextToken("\"");
+				orderName = st.nextToken("\"");
+				orderFound = false;
+				for (Order o : currentOrders) {
+					if(o.getName()== orderName) {
+						currentOrder = o;
+						orderFound = true;
+					}
+				}
+				if(!orderFound) {
+					System.err.println("Order corresponding to " + orderName + " was not found");
+					error = true ;
+				}
 				boolean applyReductionBool = false ;
 				if(st.hasMoreTokens()){
 					if(st.hasMoreTokens()){	
@@ -308,10 +343,10 @@ public class MyFoodoraClient {
 					System.out.println(currentOrder);
 					if(applyReductionBool){
 						if(currentCustomer.getFidelityCard().computeReduction(currentOrder)>0){
-							System.out.println("You have won "+currentCustomer.getFidelityCard().computeReduction(currentOrder)+" with your fidelity card.");
+							System.out.println("Here's the reduction "+currentCustomer.getFidelityCard().computeReduction(currentOrder)+" with your fidelity card.");
 						}
 					}
-					currentCustomer.submitOrder(currentOrder, true, myFoodora);
+					currentCustomer.addOrder(currentOrder, true, myFoodora);
 					currentOrder = null ;
 				}
 				return "next" ;
@@ -372,7 +407,7 @@ public class MyFoodoraClient {
 	 * Works with all the possible commands that a courier can use
 	 * @return "next" to go to the next command or "logout" if the courier wanted to logout.
 	 */
-	private static String workCourier(){
+	private static String courierInterface(){
 		Courier currentCourier = (Courier)currentUser ;
 		System.out.println(currentCourier.getBoard());
 		boolean error = false ;
@@ -467,7 +502,7 @@ public class MyFoodoraClient {
 	 * Works with all the possible commands that a manager can use
 	 * @return "next" to go to the next command or "logout" if the manager wanted to logout.
 	 */
-	private static String workManager(){
+	private static String managerInterface(){
 		Manager currentManager = (Manager)currentUser ;
 		boolean error = false ;
 		String commande ;
@@ -555,7 +590,7 @@ public class MyFoodoraClient {
 				if(!error){
 					currentManager.addUser(UserType.customer, customerName, customerSurname, customerUserName, customerPassword);
 					try{
-						((Customer)currentManager.getMyFoodora().findUserByName(customerName)).setAddress(new Location(customerX,customerY));
+						((Customer)currentManager.getMyFoodora().findUserByName(customerName)).setLocation(new Location(customerX,customerY));
 						System.out.println("The customer has been registered. Here are its properties : ") ;
 						System.out.println(currentManager.getMyFoodora().findUserByName(customerName));
 					}catch(UserNotFoundException e){
@@ -601,8 +636,8 @@ public class MyFoodoraClient {
 				return "next" ;
 			case("setDeliveryPolicy"):
 				st.nextToken("\"");
-				String delPolicyName = st.nextToken("\"");
-				switch(delPolicyName){
+				String deliveryPolicyName = st.nextToken("\"");
+				switch(deliveryPolicyName){
 				case("fairOccupation"):case("fastest"):
 					break ;
 				default :
@@ -614,7 +649,15 @@ public class MyFoodoraClient {
 					error = true ;
 				}
 				if(!error){
-					currentManager.setDeliveryPolicy(delPolicyName);
+					switch(deliveryPolicyName) {
+					case ("fastest"):
+						currentManager.getMyFoodora().setDeliveryPolicy(new FastestDeliveryPolicy());
+						break;
+					case ("fairOccupation") :
+						currentManager.setDeliveryPolicy(new FairOccupationDeliveryPolicy());
+						break;
+
+					}
 				}
 				return "next" ;
 			case("meetTargetProfit"):
@@ -930,7 +973,7 @@ public class MyFoodoraClient {
 	 * Works with all the possible commands that a restaurant can use
 	 * @return "next" to go to the next command, "disconnect" or "close".
 	 */
-	private static String workRestaurant(){
+	private static String restaurantInterface(){
 		Restaurant currentRestaurant = (Restaurant)currentUser ;
 		String commande ;
 		boolean error = false ;
@@ -944,8 +987,6 @@ public class MyFoodoraClient {
 						+ "\"addDish2Meal <dishName> <mealName>\" : adds a dish to a meal\n"
 						+ "\"showMeal <mealName>\" : displays the indicated meal\n"
 						+ "\"setSpecialOffer <mealName>\" : sets the meal of the week\n"
-						+ "\"setSpecialDiscountFactor <value>\" : sets the special discount factor\n"
-						+ "\"setSpecialDiscountFactor <value>\" : sets the generic discount factor\n"
 						+ "\"showSortedMeals <> : displays all the meals w.r.t. the number of times they have been picked\n"
 						+ "\"showSortedDishes <> : displays all the dishes w.r.t. the number of times they have been picked\n"
 						+ "\"logout\" : log out\n");
@@ -1082,46 +1123,7 @@ public class MyFoodoraClient {
 					}
 				}
 				return "next" ;
-			case("setSpecialDiscountFactor"):
-				st.nextToken("\"");
-				String stringDiscountFactor = st.nextToken("\"");
-				double discountFactor = 0;
-				try{
-					discountFactor = Double.parseDouble(stringDiscountFactor) ;
-				}catch(NumberFormatException e){
-					System.err.println("The <value> parameter is invalid. You must enter a double value.");
-					error = true ;
-				}
-				if(st.hasMoreTokens()){
-					System.err.println("The command \"setSpecialDiscountFactor <value>\" has only 1 parameter.");
-					error = true  ;
-				}
-				if(!error){
-					currentRestaurant.setSpecialDiscountFactor(discountFactor);
-					System.out.println("The discount factor is : "+discountFactor);
-				
-				}
-				return "next" ;
-			case("setGenericDiscountFactor"):
-				st.nextToken("\"");
-				String stringGenericFactor = st.nextToken("\"");
-				double genericFactor = 0;
-				try{
-					genericFactor = Double.parseDouble(stringGenericFactor) ;
-				}catch(NumberFormatException e){
-					System.err.println("The <value> parameter is invalid. You must enter a double value.");
-					error = true ;
-				}
-				if(st.hasMoreTokens()){
-					System.err.println("The command \"setGenericDiscountFactor <value>\" has only 1 parameter.");
-					error = true  ;
-				}
-				if(!error){
-					currentRestaurant.setGenericDiscountFactor(genericFactor);
-					System.out.println("The generic discount factor is : "+genericFactor);
-				
-				}
-				return "next" ;
+			
 			case("setSpecialOffer"):
 				st.nextToken("\"");
 				mealName = st.nextToken("\"");

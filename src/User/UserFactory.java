@@ -11,9 +11,7 @@ public class UserFactory implements Serializable {
 
 	private static final long serialVersionUID = -6020715672334438764L;
 
-	public UserFactory() {
-	}
-	
+	public UserFactory() {}
 	
 	public void registerUser (UserType userType, String name, String surname, String userName, String password, MyFoodora myFoodora){
 		switch(userType){

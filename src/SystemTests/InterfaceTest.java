@@ -8,14 +8,14 @@ import OrderAndDelivery.*;
 import static org.junit.Assert.*;
 import org.junit.*;
 
-public class BoardTest {
+public class InterfaceTest {
 
-	private static Board<String> board;
+	private static Interface<String> board;
 	
 	@BeforeClass
 	public static void createBoard(){
-		board = new Board<String>();
-		String offer = "At Dominos the meal family is 5% cheaper than usually !\n";
+		board = new Interface<String>();
+		String offer = "The most popular menu and your favorite is now available for 10% cheaper\n";
 		board.addObs(offer);
 	}
 	

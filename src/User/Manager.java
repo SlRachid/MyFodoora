@@ -13,9 +13,7 @@ public class Manager extends User {
 	 */
 	private MyFoodora myFoodora ;
 	
-	private TargetProfitPolicyFactory targetProfitPolicyFactory ;
-	private DeliveryPolicyFactory deliveryPolicyFactory ;
-	
+
 	/**
 	 * creates a manager who will manage the MyFoodora platform
 	 * @param name : the name of the user
@@ -27,8 +25,6 @@ public class Manager extends User {
 	public Manager(String name, String surname, String userName, String password, MyFoodora myFoodora) {
 		super(name, surname, userName, password);
 		this.myFoodora = myFoodora;
-		this.targetProfitPolicyFactory = new TargetProfitPolicyFactory();
-		this.deliveryPolicyFactory = new DeliveryPolicyFactory();		
 		this.setUserType(UserType.manager);
 	} 
 	
@@ -147,8 +143,7 @@ public class Manager extends User {
 	 * @throws NonReachableTargetProfitException : if the target profit cannot be reached 
 	 */
 	public double meetTargetProfit (String profitInfo, double targetProfit) throws NonReachableTargetProfitException {
-		TargetProfitPolicy targetProfitPolicy = targetProfitPolicyFactory.chooseTargetProfitPolicy(profitInfo);
-		double profitInfoValue = targetProfitPolicy.meetTargetProfit(myFoodora, targetProfit);
+		double profitInfoValue = myFoodora.getTargetProfitPolicy().meetTargetProfit(myFoodora, targetProfit);
 		return (profitInfoValue);
 	}
 	
@@ -156,11 +151,37 @@ public class Manager extends User {
 	 * set the delivery policy : fastest delivery policy or fair occupation delivery policy
 	 * @param deliveryPolicyChoice : "fastest" or "fairOccupation"
 	 */
-	public void setDeliveryPolicy (String deliveryPolicyChoice){
-		DeliveryPolicy deliveryPolicy = deliveryPolicyFactory.chooseDeliveryPolicy(deliveryPolicyChoice);
-		myFoodora.setDeliveryPolicy(deliveryPolicy);
+	
+	
+	public void setDeliveryPolicy (DeliveryPolicy deliveryPolicy){
+		this.myFoodora.setDeliveryPolicy(deliveryPolicy);
 	}
 	
+	
+	/**
+	 * @return the deliveryPolicy
+	 */
+	public DeliveryPolicy getDeliveryPolicy() {
+		return myFoodora.getDeliveryPolicy();
+	}
+
+
+	/**
+	 * @return the targetProfitPolicy
+	 */
+	public TargetProfitPolicy getTargetProfitPolicy() {
+		return myFoodora.getTargetProfitPolicy();
+	}
+
+
+	/**
+	 * @param targetProfitPolicy the targetProfitPolicy to set
+	 */
+	public void setTargetProfitPolicy(TargetProfitPolicy targetProfitPolicy) {
+		this.myFoodora.setTargetProfitPolicy(targetProfitPolicy);
+	}
+
+
 	/**
 	 * get the most selling restaurant considering the number of orders
 	 * @return mostSellingRestaurant : the most selling restaurant
@@ -212,9 +233,9 @@ public class Manager extends User {
 		for (User user : myFoodora.getUsers()){
 			if (user.getUserType().equals(UserType.courier)){
 				Courier courier = (Courier)user;
-				if((courier.getCounter() > mostDeliveries)&&(courier.isActivated())){
+				if((courier.getNumOfDeliveries() > mostDeliveries)&&(courier.isActivated())){
 					mostActiveCourier = courier;
-					mostDeliveries = courier.getCounter();
+					mostDeliveries = courier.getNumOfDeliveries();
 				}
 			}
 		}
@@ -227,14 +248,14 @@ public class Manager extends User {
 	 */
 	public Courier leastActiveCourier(){
 		Courier leastActiveCourier = null;
-		int leastDeliveries = 999999999;
+		int leastDeliveries = Integer.MAX_VALUE;
 		
 		for (User user : myFoodora.getUsers()){
 			if (user.getUserType().equals(UserType.courier)){
 				Courier courier = (Courier)user;
-				if(courier.getCounter() < leastDeliveries){
+				if(courier.getNumOfDeliveries() < leastDeliveries){
 					leastActiveCourier = courier;
-					leastDeliveries = courier.getCounter();
+					leastDeliveries = courier.getNumOfDeliveries();
 				}
 			}
 		}

@@ -12,5 +12,5 @@ public interface DeliveryPolicy {
 	 * @param myFoodora : MyFoodora system
 	 * @param order : the order which need to be allocated to a courier
 	 */
-	public abstract void allocateCourierToOrder(MyFoodora myFoodora, Order order);
+	public abstract void allocateCourier(MyFoodora myFoodora, Order order);
 }

@@ -33,7 +33,7 @@ public class OrderTest {
 			customer = (Customer) myFoodora.login("chaperouge", "qsdfghjkl");
 			
 			//we create an order
-			order = new Order(customer, restaurant);
+			order = new Order("Massine",customer, new Location(1,2), restaurant);
 			//we fill the order with food items
 			Dish dish = restaurant.findDishByName("brochettes boeuf");
 			order.addDish(dish);

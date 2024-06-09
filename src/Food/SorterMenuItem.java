@@ -2,9 +2,7 @@ package Food;
 
 import java.util.*;
 
-public interface SorterFoodItem {
+public interface SorterMenuItem {
 	
-	
-	public MenuItem maxFoodItem(ArrayList<MenuItem> foodItems);
 	public ArrayList<MenuItem> sort(ArrayList<MenuItem> foodItems);
 }

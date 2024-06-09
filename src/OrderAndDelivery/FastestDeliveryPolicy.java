@@ -20,10 +20,10 @@ public class FastestDeliveryPolicy implements DeliveryPolicy,Serializable {
 	 */
 
 	@Override
-	public void allocateCourierToOrder(MyFoodora myFoodora, Order order) {
+	public void allocateCourier(MyFoodora myFoodora, Order order) {
 		//the address of delivery
-		double xOrder = order.getAddressOfDelivery().getX();
-		double yOrder = order.getAddressOfDelivery().getY();
+		double xOrder = order.getDeliveryAddress().getX();
+		double yOrder = order.getDeliveryAddress().getY();
 		
 		Courier chosenCourier = null;
 		//distanceMin is initiated to plus infinity

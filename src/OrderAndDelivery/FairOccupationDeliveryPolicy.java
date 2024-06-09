@@ -13,7 +13,7 @@ public class FairOccupationDeliveryPolicy implements DeliveryPolicy,Serializable
 	}
 
 	@Override
-	public void allocateCourierToOrder(MyFoodora myFoodora, Order order) {
+	public void allocateCourier(MyFoodora myFoodora, Order order) {
 
 		Courier chosenCourier = null;
 		//nbOfCompletedDeliveriesMin is initiated to infinite
@@ -22,7 +22,7 @@ public class FairOccupationDeliveryPolicy implements DeliveryPolicy,Serializable
 		for (User user: myFoodora.getUsers()){
 			if (user instanceof Courier){
 				Courier courier = (Courier)user;
-				int nbOfCompletedDeliveries = courier.getCounter();
+				int nbOfCompletedDeliveries = courier.getNumOfDeliveries();
 				
 				if (courier.isOnDuty()&&(nbOfCompletedDeliveries < nbOfCompletedDeliveriesMin)){
 					chosenCourier = courier;

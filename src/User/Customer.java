@@ -16,7 +16,7 @@ public class Customer extends User {
 	/**
 	 * the board which will show all the new offers if consensus is true
 	 */
-	private Board offerBoard ;
+	private Interface<String> offerBoard ;
 	
 	private Location address ;
 	
@@ -24,7 +24,7 @@ public class Customer extends User {
 	
 	private String phoneNumber ;
 	/**
-	 * enables the customer to register to different fidelity programs
+	 * enables the customer to choose a fidelity program
 	 */
 	private FidelityCardFactory fidelityCardFactory = new FidelityCardFactory() ;
 	
@@ -38,7 +38,7 @@ public class Customer extends User {
 	public Customer(String name, String surname, String userName, String password) {
 		super(name, surname, userName, password);
 		this.fidelityCard = new BasicFidelityCard();
-		this.offerBoard = new Board<String>() ;
+		this.offerBoard = new Interface<String>() ;
 		this.address = null ;
 		this.email = "" ;
 		this.phoneNumber = "" ;
@@ -59,7 +59,7 @@ public class Customer extends User {
 	public Customer(String name, String surname, String userName, String password, Location address, String email, String phoneNumber) {
 		super(name, surname, userName, password);
 		this.fidelityCard = new BasicFidelityCard();
-		this.offerBoard = new Board<String>() ;
+		this.offerBoard = new Interface<String>() ;
 		this.address = address ;
 		this.email = email ;
 		this.phoneNumber = phoneNumber ;
@@ -125,7 +125,7 @@ public class Customer extends User {
 	 * @param applyReduction : "true" if the customer wants to apply a reduction using his fidelity card
 	 * @param myFoodora : MyFoodora core
 	 */
-	public void submitOrder (Order order, boolean applyReduction, MyFoodora myFoodora){
+	public void addOrder (Order order, boolean applyReduction, MyFoodora myFoodora){
 		order.submit(applyReduction, myFoodora);
 		this.payOrder(order);
 	}
@@ -146,11 +146,26 @@ public class Customer extends User {
 		this.consensus = consensus;
 	}
 
-	public Location getAddress() {
+	public Location getLocation() {
 		return address;
 	}
 
-	public void setAddress(Location address) {
+	public void setLocation(Location address) {
 		this.address = address;
 	}
+
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 }

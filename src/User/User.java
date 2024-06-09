@@ -16,13 +16,13 @@ public abstract class User implements java.io.Serializable {
 	 */
 	private UserType userType ;
 	/**
-	 * the static lastID ensure that the IDs of all users are different
+	 * the static nextID ensures the uniqueness of IDs
 	 */
 	protected static int nextID = 0 ;
 	/**
-	 * true if the account of the user is activated
+	 * activation is done by the managaer
 	 */
-	private boolean activated = false ;
+	private boolean active = false ;
 	
 	/**
 	 * creates an user who will use the MyFoodora platform
@@ -38,7 +38,7 @@ public abstract class User implements java.io.Serializable {
 		this.surname = surname;
 		this.userName = userName ;
 		this.password = password ;
-		this.activated = true ;
+		this.active = true ;
 	}
 	
 
@@ -83,11 +83,11 @@ public abstract class User implements java.io.Serializable {
 	}
 
 	public boolean isActivated() {
-		return activated;
+		return active;
 	}
 
 	public void setActivated(boolean activated) {
-		this.activated = activated;
+		this.active = activated;
 	}
 
 	public UserType getUserType() {

@@ -101,7 +101,7 @@ public class MyFoodoraExample {
 		myFoodora.addUser(new Customer("Theo", "Bob", "theo7794", "password", new Location(84.3, 145.12), "theo.bob@gmail.com", "0786822354"));
 		
 		//we create an order
-		Order order = new Order(customer, hoki);
+		Order order = new Order("Massine", customer, new Location(7.0,3.0), hoki);
 		//we fill the order with food items
 		order.addDish(mainDish);
 		order.addMeal(fullMeal);

@@ -5,6 +5,7 @@ import java.io.Serializable;
  * this visitor pattern enables us to deal with different implementation of
  *		computePrice
  *		addDish
+ *		which depend on the nature of the meal
  */
 public class MealVisitor implements Serializable {
 

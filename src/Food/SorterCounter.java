@@ -1,48 +1,31 @@
 package Food;
 
 import java.util.ArrayList;
-import java.io.Serializable ;
+import java.util.Collections;
+import java.util.Comparator;
+import java.io.Serializable;
 
 /**
- * sorts the list according to the area of figures (in descending order)
+ * sorts the list of Food Items (HalfMeals, Dishes a la Carte) with respect to how they were ordered (in descending order)
  */
-public class SorterCounter implements SorterFoodItem,Serializable {
+public class SorterCounter implements SorterMenuItem, Serializable {
 
-	private static final long serialVersionUID = -2130889579431738571L;
+    private static final long serialVersionUID = -2130889579431738571L;
 
-	@Override
-	public MenuItem maxFoodItem(ArrayList<MenuItem> foodItems){
-		MenuItem maxFoodItem = null; 
-		int maxCounter = 0 ;
-		
-		if(foodItems.isEmpty())
-			return null;
-		else{
-			for(MenuItem foodItem:foodItems){
-				if(foodItem.getCounter()>=maxCounter){
-					maxCounter = foodItem.getCounter() ;
-					maxFoodItem = foodItem ;
-				}	
-			}
-		}
-		return maxFoodItem; 
-	}
-
-	@Override
-	public ArrayList<MenuItem> sort(ArrayList<MenuItem> foodItems){
-		ArrayList<MenuItem> FoodItemsCopy = (ArrayList<MenuItem>) foodItems.clone(); 
-		ArrayList<MenuItem> sortedFoodItems = new ArrayList<MenuItem>();
-		
-		if(foodItems.size()<=1)
-			return foodItems;
-		else{
-			MenuItem maxFoodItem;
-			while(FoodItemsCopy.size()>0){
-				maxFoodItem = this.maxFoodItem(FoodItemsCopy);
-				sortedFoodItems.add(maxFoodItem);
-				FoodItemsCopy.remove(maxFoodItem);
-			}
-			return sortedFoodItems;
-		}
-	}
+    @Override
+    public ArrayList<MenuItem> sort(ArrayList<MenuItem> foodItems) {
+        // Make a copy of the list to avoid modifying the original list
+        ArrayList<MenuItem> sortedFoodItems = (ArrayList<MenuItem>) foodItems.clone();
+        
+        // Sort the copied list based on the counter value in descending order
+        Collections.sort(sortedFoodItems, new Comparator<MenuItem>() {
+            @Override
+            public int compare(MenuItem item1, MenuItem item2) {
+                // Compare counter values in descending order
+                return Integer.compare(item2.getCounter(), item1.getCounter());
+            }
+        });
+        
+        return sortedFoodItems;
+    }
 }

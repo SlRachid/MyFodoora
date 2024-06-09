@@ -12,6 +12,12 @@ public class Order implements java.io.Serializable {
 	private static final long serialVersionUID = -372769376339718757L;
 	
 	/**
+	 * the name of the order
+	 */
+	private String name;
+	
+
+	/**
 	 * the static nextID to ensure the uniqueness of the IDs
 	 */
 	protected static int nextID = 1 ;
@@ -42,25 +48,41 @@ public class Order implements java.io.Serializable {
 	/**
 	 * 
 	 */
-	private Location addressOfDelivery ;
+	private Location deliveryaddress ;
 	
 	/**
 	 * creates a new Order object given a customer and a target restaurant
 	 * @param customer : the customer making an order
 	 * @param restaurant : the target restaurant
 	 */
-	public Order(Customer customer, Restaurant restaurant) {
+	public Order(String name, Customer customer,Location address, Restaurant restaurant) {
 		this.uniqueID = nextID;
 		nextID++;
-		
+		this.name = name;
 		this.customer = customer;
+		this.customer.setLocation(address);
 		this.restaurant = restaurant;
 		this.dishes = new ArrayList<Dish>();
 		this.meals = new ArrayList<Meal>();
 		this.dateOfOrder = Calendar.getInstance() ;
 		this.courier = null ;
-		this.addressOfDelivery = restaurant.getAddress() ;
+		this.deliveryaddress = restaurant.getLocation() ;
 	}
+	
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
 
 	public int getUniqueID() {
 		return uniqueID;
@@ -139,12 +161,12 @@ public class Order implements java.io.Serializable {
 		return(price);
 	}
 	
-	public Location getAddressOfDelivery() {
-		return addressOfDelivery;
+	public Location getDeliveryAddress() {
+		return deliveryaddress;
 	}
 
-	public void setAddressOfDelivery(Location addressOfDelivery) {
-		this.addressOfDelivery = addressOfDelivery;
+	public void setDeliveryAddress(Location addressOfDelivery) {
+		this.deliveryaddress = addressOfDelivery;
 	}	
 
 	public Courier getCourier() {
@@ -168,7 +190,7 @@ public class Order implements java.io.Serializable {
 	 * @param myFoodora : myFoodora core
 	 */
 	public void submit(boolean applyReduction, MyFoodora myFoodora){
-		myFoodora.getDeliveryPolicy().allocateCourierToOrder(myFoodora, this);
+		myFoodora.getDeliveryPolicy().allocateCourier(myFoodora, this);
 		
 		restaurant.increaseCounter();
 		for (Dish dish : dishes){
@@ -201,6 +223,7 @@ public class Order implements java.io.Serializable {
 	@Override
 	public String toString() {
 		return "Order [ID : " + this.uniqueID + "\n"
+				+ "name=" + name
 				+ "dateOfOrder=" + dateOfOrder.get(Calendar.DAY_OF_MONTH) + " " + dateOfOrder.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.US) + " " + dateOfOrder.get(Calendar.YEAR) + "\n" 
 				+ "customer=" + customer + "\n" 
 				+ "restaurant=" + restaurant + "\n" 
@@ -208,7 +231,7 @@ public class Order implements java.io.Serializable {
 				+ "meals=" + meals + "\n"
 				+ "price=" + price + "\n"
 				+ "courier=" + courier + "\n"
-				+ "addressOfDelivery=" + addressOfDelivery + "]\n";
+				+ "To be delivered to [" + deliveryaddress + "]\n";
 	}
 	
 	@Override

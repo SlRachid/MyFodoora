@@ -2,11 +2,11 @@ package Food;
 
 import java.io.Serializable ;
 
-public class FoodItemFactory implements Serializable {
+public class MenuItemFactory implements Serializable {
 	
 	private static final long serialVersionUID = 6129494191504757935L;
 
-	public FoodItemFactory() {}
+	public MenuItemFactory() {}
 	
 	public Dish createDish (DishType dishType, String name, double price, DietType type) {
 		Dish dish = null;

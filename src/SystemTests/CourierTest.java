@@ -34,7 +34,7 @@ public class CourierTest {
 			customer = (Customer) myFoodora.login("chaperouge", "qsdfghjkl");
 			
 			//we create an order
-			order = new Order(customer, restaurant);
+			order = new Order("Rachid",customer,new Location(1.0,2.0) , restaurant);
 			//we fill the order with food items
 			Dish dish = restaurant.findDishByName("brochettes boeuf");
 			order.addDish(dish);
@@ -49,7 +49,7 @@ public class CourierTest {
 
 	@Test
 	public void testGetBoard() {
-		Board board = courier.getBoard() ;
+		Interface board = courier.getBoard() ;
 		
 		//we check that the order is on the board
 		System.out.println(board);
@@ -60,17 +60,17 @@ public class CourierTest {
 	public void testAcceptDeliveryCall() throws OrderNotFoundException{
 		courier = order.getCourier();
 		//we store the previous counter of the courier
-		int previousCounter = courier.getCounter();
+		int previousCounter = courier.getNumOfDeliveries();
 				
 		//the courier gets the call on his board : order of uniqueID 0
-		Board<Order> board = courier.getBoard();
+		Interface<Order> board = courier.getBoard();
 		Order order = board.findObsById(1);
 		
 		//the courier accept the delivery call
 		courier.acceptDeliveryCall(true, order, myFoodora);
 		
 		//we check that the counter of the courier has increased
-		int currentCounter = courier.getCounter();
+		int currentCounter = courier.getNumOfDeliveries();
 		assertEquals(previousCounter+1, currentCounter, 0);
 		
 		//we check that the board is now cleared
@@ -80,17 +80,17 @@ public class CourierTest {
 	@Test
 	public void testRefuseDeliveryCall() throws OrderNotFoundException{
 		//we store the previous counter of the courier
-		int previousCounter = courier.getCounter();
+		int previousCounter = courier.getNumOfDeliveries();
 				
 		//the courier gets the call on his board : order of uniqueID 0
-		Board<Order> board = courier.getBoard();
+		Interface<Order> board = courier.getBoard();
 		Order order = board.findObsById(1);
 		
 		//the courier refuse the delivery call
 		courier.acceptDeliveryCall(false, order, myFoodora);
 		
 		//we check that the counter of the courier has not increased
-		int currentCounter = courier.getCounter();
+		int currentCounter = courier.getNumOfDeliveries();
 		assertEquals (previousCounter, currentCounter, 0);
 		
 		//we check that the board is now cleared

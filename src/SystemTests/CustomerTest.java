@@ -33,7 +33,7 @@ public class CustomerTest {
 			customer = (Customer) myFoodora.login("chaperouge", "qsdfghjkl");
 			
 			//we create an order
-			order = new Order(customer, restaurant);
+			order = new Order("Rachid",customer,new Location(1.0,2.0), restaurant);
 			//we fill the order with food items
 			Dish dish = restaurant.findDishByName("brochettes boeuf");
 			order.addDish(dish);
@@ -57,7 +57,7 @@ public class CustomerTest {
 	@Test
 	public void testSubmitOrder() {
 		//the customer submit the order
-		customer.submitOrder(order, true, myFoodora);
+		customer.addOrder(order, true, myFoodora);
 		System.out.println(order);
 	}
 

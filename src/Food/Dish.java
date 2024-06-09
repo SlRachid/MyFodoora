@@ -15,9 +15,14 @@ public abstract class Dish extends MenuItem {
 	/**
 	 * W.r.t the customer's diet : "standard", "vegetarian" or "glutenFree"
 	 */
-	private DietType type; 
+	private DietType type;
 	
-
+	/**
+	 * 
+	 * @param name
+	 * @param price
+	 * @param type
+	 */
 	public Dish(String name, double price, DietType type) {
 		this.name = name;
 		this.price = price;

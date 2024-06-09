@@ -40,7 +40,7 @@ public class MyFoodora implements java.io.Serializable{
 	
 	private DeliveryPolicy deliveryPolicy = new FastestDeliveryPolicy() ;
 	
-	private SorterFoodItem shippedOrderPolicy = new SorterCounter() ;
+	private SorterMenuItem shippedOrderPolicy = new SorterCounter() ;
 	
 	private UserFactory userFactory ;
 	
@@ -115,10 +115,10 @@ public class MyFoodora implements java.io.Serializable{
 	 * @param userName : the username of the user
 	 * @param password : the password of the user
 	 * @return User : the user of given username and password
-	 * @throws IdentificationIncorrectException : if the given username and password do not match a user of the system
-	 * @throws AccountDeactivatedException : if the account of the user has been deactivated
+	 * @throws IncorrectInformationException : if the given username and password do not match a user of the system
+	 * @throws NotActiveAccException : if the account of the user has been deactivated
 	 */
-	public User login(String userName, String password) throws IdentificationIncorrectException, AccountDeactivatedException{
+	public User login(String userName, String password) throws IncorrectInformationException, NotActiveAccException{
 		User foundUser;
 		for (User user : users){
 			//Check that the given identification parameters match a user of the database
@@ -127,11 +127,11 @@ public class MyFoodora implements java.io.Serializable{
 				if (foundUser.isActivated()){
 					return (foundUser);
 				}else{
-					throw (new AccountDeactivatedException ("your account is deactivated"));
+					throw (new NotActiveAccException ("your account is deactivated"));
 				}
 			}
 		}
-		throw (new IdentificationIncorrectException ("username or password incorrect"));
+		throw (new IncorrectInformationException ("username or password incorrect"));
 	}
 	
 	/**
@@ -165,7 +165,7 @@ public class MyFoodora implements java.io.Serializable{
 		
 		date1.set(Calendar.DAY_OF_MONTH, 1);
 		date2.set(Calendar.DAY_OF_MONTH, lastDayOfLastMonth);
-		double totalIncome = totalIncome (date1, date2);
+		double totalIncome = totalIncome(date1, date2);
 		return totalIncome ;
 	}
 	
@@ -383,12 +383,12 @@ public class MyFoodora implements java.io.Serializable{
 		this.deliveryPolicy = deliveryPolicy;
 	}
 
-	public SorterFoodItem getShippedOrderPolicy() {
+	public SorterMenuItem getShippedOrderPolicy() {
 		return shippedOrderPolicy;
 	}
 
 
-	public void setShippedOrderPolicy(SorterFoodItem shippedOrderPolicy) {
+	public void setShippedOrderPolicy(SorterMenuItem shippedOrderPolicy) {
 		this.shippedOrderPolicy = shippedOrderPolicy;
 	}
 

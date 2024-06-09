@@ -9,7 +9,7 @@ public class HalfMeal extends Meal {
 	private Dish sideDish;
 	
 	/**
-	 * creates a FullMeal object of a given mainDish, starter and dessert
+	 * creates a HalflMeal object where we could add a mainDish and a sideDish.
 	 * @param name : the name of the meal
 	 */
 	public HalfMeal(String name) {
@@ -18,7 +18,7 @@ public class HalfMeal extends Meal {
 	}
 	
 	/**
-	 * creates a HalfMeal object of a given mainDish and sideDish
+	 * creates a HalfMeal object of a given mainDish and sideDish (starter, dessert)
 	 * @param name : the name of the meal
 	 * @param mainDish : the mainDish of the meal
 	 * @param sideDish : the sideDish of the meal
@@ -39,35 +39,17 @@ public class HalfMeal extends Meal {
 	/**
 	 * computes the price of the meal
 	 */
+	
 	@Override
 	public double getPrice() {
 		double price = this.mealVisitor.computePriceMeal(this);
 		return(price);
 	}
 	
-	/**
-	 * updates the price of the meal according to the changes of discount factors
-	 * @param menu : the menu which contains the meal
-	 */
-	@Override
-	public void update (Menu menu){
-		double genericDiscountFactor = menu.getGenericDiscountFactor();
-		double specialDiscountFactor = menu.getSpecialDiscountFactor();
-		Meal mealOfTheWeek = menu.getMealOfTheWeek();
-		
-		if (this == mealOfTheWeek){
-			//we apply the special discount factor
-			this.discountFactor = specialDiscountFactor;
-		}
-		else{
-			//we apply the generic discount factor
-			this.discountFactor = genericDiscountFactor;
-		}
-		this.price = this.getPrice();
-	}
+
 	
 	/**
-	 * adds a dish to the meal if possible
+	 * adds a dish to the meal if possible using a mealVisitor (considering we have half and full meals)
 	 * @param dish : the dish we want to add to the meal
 	 * @throws MeallsCompleteException : if the meal is complete
 	 */
@@ -75,6 +57,10 @@ public class HalfMeal extends Meal {
 	public void addDish(Dish dish) throws MeallsCompleteException {
 		this.mealVisitor.addDish2Meal(dish, this);
 	}
+	/**
+	 * 
+	 * @return returns the side dish 
+	 */
 	
 	public Dish getSideDish() {
 		return sideDish;

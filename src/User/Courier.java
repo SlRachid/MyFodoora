@@ -13,9 +13,9 @@ public class Courier extends User {
 	private Location position ;
 	private String phoneNumber ;
 	/**
-	 * the number of orders delivered
+	 * the number of completed deliveries
 	 */
-	private int counter = 0 ;
+	private int numOfDeliveries = 0 ;
 	/**
 	 * true when the courier is on-duty and false if he is off-duty
 	 */
@@ -23,7 +23,7 @@ public class Courier extends User {
 	/**
 	 * show the delivery calls
 	 */
-	private Board<Order> board;
+	private Interface<Order> board;
 
 	/**
 	 * creates a courier who will use the MyFoodora platform
@@ -36,7 +36,7 @@ public class Courier extends User {
 		super(name, surname, userName, password);
 		this.position = null ;
 		this.phoneNumber = "" ;
-		this.board = new Board<Order>();
+		this.board = new Interface<Order>();
 
 		this.setUserType (UserType.courier) ;
 	}
@@ -54,7 +54,7 @@ public class Courier extends User {
 		super(name, surname, userName, password);
 		this.position = position ;
 		this.phoneNumber = phoneNumber ;
-		this.board = new Board<Order>();
+		this.board = new Interface<Order>();
 		
 		this.setUserType (UserType.courier) ;
 	}
@@ -71,7 +71,7 @@ public class Courier extends User {
 		}else{
 			//we set the state of the courier as "off-duty" to allocate another courier to the order
 			this.onDuty = false;
-			myFoodora.getDeliveryPolicy().allocateCourierToOrder(myFoodora, waitingOrder);
+			myFoodora.getDeliveryPolicy().allocateCourier(myFoodora, waitingOrder);
 		}
 		this.board.removeObs(waitingOrder);
 		
@@ -101,15 +101,15 @@ public class Courier extends User {
 		this.onDuty = onDuty;
 	}
 
-	public int getCounter() {
-		return counter;
+	public int getNumOfDeliveries() {
+		return numOfDeliveries;
 	}
 	
 	public void increaseCounter() {
-		counter++;
+		numOfDeliveries++;
 	}
 
-	public Board<Order> getBoard() {
+	public Interface<Order> getBoard() {
 		return board;
 	}
 }
