@@ -1,6 +1,4 @@
-The `MyFoodoraClient.java` file contains the command-line interface (CLI) implementation for the MyFoodora platform. Based on the structure and available commands in the file, I will update the README to reflect the commands supported by this CLI.
 
----
 
 # MyFoodora Platform
 
@@ -129,10 +127,3 @@ Unit tests are provided to ensure the correctness of the application. To run the
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure that your code follows the project's style guidelines and includes appropriate tests.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-This README provides a structured overview of the MyFoodora project, including its core functionalities, CLI commands, and usage instructions. Adjustments can be made to fit any additional project-specific requirements or information.
