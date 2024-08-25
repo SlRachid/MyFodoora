@@ -5,9 +5,9 @@ import System.*;
 import OrderAndDelivery.*;
 
 
-public class MyFoodoraInitialization {
+public class MyFoodora_ini {
 
-	public MyFoodoraInitialization() {
+	public MyFoodora_ini() {
 		// TODO Auto-generated constructor stub
 	}
 

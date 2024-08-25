@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module MyFoodora {
-	requires junit;
-}
